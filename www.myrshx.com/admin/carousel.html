@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>轮播图管理 · 荣盛科技后台</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23004182'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'>荣</text></svg>">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <main class="main">
+            <header class="page-head">
+                <div>
+                    <div class="page-eyebrow"><span class="num">/ 03</span><span>HERO CAROUSEL</span></div>
+                    <h1 class="page-title">轮播图管理</h1>
+                    <p class="page-subtitle">首页主视觉横幅 · 最多支持 5 张</p>
+                </div>
+                <button class="btn btn-primary" id="btn-new-carousel">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    新增轮播
+                </button>
+            </header>
+
+            <div class="carousel-grid" id="carousel-grid">
+                <div class="page-loading" style="grid-column:1/-1;">
+                    <div class="loading dark"></div>
+                    <div>加载中...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 轮播图编辑弹窗 -->
+    <div class="modal" id="carousel-modal">
+        <div class="modal-mask"></div>
+        <div class="modal-body lg">
+            <div class="modal-head">
+                <div class="t">
+                    <span class="eyebrow">CAROUSEL · EDITOR</span>
+                    <span id="carousel-modal-title">新增轮播</span>
+                </div>
+                <button class="modal-close" onclick="closeModal('carousel-modal')">×</button>
+            </div>
+            <form id="carousel-form">
+                <div class="modal-content">
+                    <input type="hidden" id="carousel-id">
+                    <input type="hidden" id="carousel-image">
+
+                    <div class="form-grid">
+                        <div class="field full">
+                            <label><span>背景图</span><span class="hint">/ IMAGE · 推荐 1920×800</span></label>
+                            <div class="upload-box" id="carousel-upload"></div>
+                        </div>
+
+                        <div class="field">
+                            <label><span>主标题 *</span><span class="hint">/ TITLE</span></label>
+                            <input type="text" id="carousel-title" required placeholder="主标题">
+                        </div>
+
+                        <div class="field">
+                            <label><span>英文副标题</span><span class="hint">/ SUBTITLE</span></label>
+                            <input type="text" id="carousel-subtitle" placeholder="例如 LABORATORY SOLUTION">
+                        </div>
+
+                        <div class="field full">
+                            <label><span>描述文字</span><span class="hint">/ DESCRIPTION</span></label>
+                            <textarea id="carousel-description" placeholder="简短描述文字（约30~80字）"></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label><span>按钮文字</span><span class="hint">/ CTA</span></label>
+                            <input type="text" id="carousel-buttonText" placeholder="了解更多">
+                        </div>
+
+                        <div class="field">
+                            <label><span>排序</span><span class="hint">/ ORDER · 数字越小越靠前</span></label>
+                            <input type="number" id="carousel-order" min="1" max="99" value="1">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('carousel-modal')">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script>
+        if (checkAuth()) {
+            renderSidebar('carousel');
+            initCarousel();
+        }
+    </script>
+</body>
+</html>

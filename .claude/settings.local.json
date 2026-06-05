@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vite *)",
+      "Bash(node server.js)",
+      "Bash(xargs grep -l \"产品与服务\")",
+      "Bash(start \"\" \"d:\\\\workspace\\\\rs-website\\\\公司官网.html\")",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(sed -i 's|<li><a href=\"index.html#hero\" class=\"nav-link\">首页</a></li>||' about.html culture.html news.html showroom.html news-detail.html logistics.html business.html)",
+      "Bash(sed -i 's|<li><a href=\"index.html#hero\">首页</a></li>||' about.html culture.html news.html showroom.html news-detail.html logistics.html business.html)"
+    ]
+  }
+}

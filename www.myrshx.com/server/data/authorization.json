@@ -1,0 +1,156 @@
+{
+  "categories": [
+    {
+      "id": "reagent",
+      "name": "化学试剂授权",
+      "icon": "📜"
+    },
+    {
+      "id": "instrument",
+      "name": "仪器设备授权",
+      "icon": "🔬"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "category": "reagent",
+      "brand": "阿拉丁 / 芯硅谷",
+      "image": "images/pdf_img_26_4.jpeg",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "category": "reagent",
+      "brand": "麦克林",
+      "image": "images/pdf_img_26_6.jpeg",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "category": "reagent",
+      "brand": "毕得医药",
+      "image": "images/pdf_img_26_7.jpeg",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "category": "reagent",
+      "brand": "国药集团",
+      "image": "images/pdf_img_27_4.jpeg",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "category": "reagent",
+      "brand": "致远化学 · 太阳牌",
+      "image": "images/pdf_img_27_5.jpeg",
+      "order": 5
+    },
+    {
+      "id": 6,
+      "category": "reagent",
+      "brand": "成都金山化学",
+      "image": "images/pdf_img_27_6.jpeg",
+      "order": 6
+    },
+    {
+      "id": 7,
+      "category": "reagent",
+      "brand": "天津科密欧",
+      "image": "images/pdf_img_27_7.jpeg",
+      "order": 7
+    },
+    {
+      "id": 8,
+      "category": "reagent",
+      "brand": "广东光华科技",
+      "image": "images/pdf_img_28_4.jpeg",
+      "order": 8
+    },
+    {
+      "id": 9,
+      "category": "reagent",
+      "brand": "科隆化学",
+      "image": "images/pdf_img_28_5.jpeg",
+      "order": 9
+    },
+    {
+      "id": 10,
+      "category": "reagent",
+      "brand": "上海三爱思",
+      "image": "images/pdf_img_28_7.jpeg",
+      "order": 10
+    },
+    {
+      "id": 11,
+      "category": "reagent",
+      "brand": "金佰利",
+      "image": "images/pdf_img_32_4.jpeg",
+      "order": 11
+    },
+    {
+      "id": 12,
+      "category": "reagent",
+      "brand": "天玻",
+      "image": "images/pdf_img_32_6.jpeg",
+      "order": 12
+    },
+    {
+      "id": 13,
+      "category": "instrument",
+      "brand": "梅特勒-托利多",
+      "image": "images/pdf_img_30_5.jpeg",
+      "order": 1
+    },
+    {
+      "id": 14,
+      "category": "instrument",
+      "brand": "雷磁 · 上海仪电",
+      "image": "images/pdf_img_29_7.jpeg",
+      "order": 2
+    },
+    {
+      "id": 15,
+      "category": "instrument",
+      "brand": "连华科技",
+      "image": "images/pdf_img_30_4.jpeg",
+      "order": 3
+    },
+    {
+      "id": 17,
+      "category": "instrument",
+      "brand": "沈阳科晶",
+      "image": "images/pdf_img_31_4.jpeg",
+      "order": 5
+    },
+    {
+      "id": 18,
+      "category": "instrument",
+      "brand": "凤凰光学",
+      "image": "images/pdf_img_29_4.jpeg",
+      "order": 6
+    },
+    {
+      "id": 19,
+      "category": "instrument",
+      "brand": "泰斯特",
+      "image": "images/pdf_img_31_6.jpeg",
+      "order": 7
+    },
+    {
+      "id": 20,
+      "category": "instrument",
+      "brand": "伟业计量 · BNCC",
+      "image": "images/pdf_img_32_7.jpeg",
+      "order": 8
+    },
+    {
+      "id": 21,
+      "category": "instrument",
+      "brand": "麦迪康",
+      "image": "images/pdf_img_32_5.jpeg",
+      "order": 9
+    }
+  ]
+}

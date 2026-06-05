@@ -1,0 +1,32 @@
+[
+  {
+    "id": "carousel-001",
+    "title": "智能实验室一站式方案解决专家",
+    "subtitle": "INTELLIGENT LABORATORY SOLUTION EXPERT",
+    "description": "专注实验室整体解决方案30余年，为教育科研、环保检测、食品安全等行业提供全方位服务",
+    "image": "images/pdf_img_43_4.jpeg",
+    "buttonText": "了解更多",
+    "buttonLink": "about.html",
+    "order": 1
+  },
+  {
+    "id": "carousel-002",
+    "title": "30年专注 值得信赖",
+    "subtitle": "TRUSTED FOR OVER 30 YEARS",
+    "description": "自1993年成立以来，始终坚持品质第一、服务至上，累计服务1000+合作客户",
+    "image": "images/pdf_img_41_4.jpeg",
+    "buttonText": "产品服务",
+    "buttonLink": "business.html",
+    "order": 2
+  },
+  {
+    "id": "carousel-003",
+    "title": "诚信为本 创新为魂",
+    "subtitle": "INTEGRITY & INNOVATION",
+    "description": "以数字化转型驱动企业发展，金蝶K/3cloud系统全面赋能业务管理",
+    "image": "images/bg/h-sec.jpg",
+    "buttonText": "联系我们",
+    "buttonLink": "#contact",
+    "order": 3
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "id": 1, "name": "中国工程物理研究院", "short": "九院 CAEP", "logo": "images/logos/caep_text.svg", "order": 1 },
+    { "id": 2, "name": "西南科技大学", "short": "SWUST", "logo": "images/logos/swust.svg", "order": 2 },
+    { "id": 3, "name": "绵阳师范学院", "short": "MTC", "logo": "images/logos/mtc.png", "order": 3 },
+    { "id": 4, "name": "中国空气动力研究与发展中心", "short": "CARDC", "logo": "images/logos/cardc_text.svg", "order": 4 },
+    { "id": 5, "name": "四川长虹", "short": "CHANGHONG", "logo": "images/logos/changhong.png", "order": 5 },
+    { "id": 6, "name": "四川九洲", "short": "JEZETEK", "logo": "images/logos/jezetek.png", "order": 6 },
+    { "id": 7, "name": "好医生药业", "short": "HYS", "logo": "images/logos/hys.png", "order": 7 },
+    { "id": 8, "name": "四川东材科技", "short": "EMTCO", "logo": "images/logos/emtco.png", "order": 8 },
+    { "id": 9, "name": "西南交通大学", "short": "SWJTU", "logo": "images/logos/swjtu.png", "order": 9 },
+    { "id": 10, "name": "中国石油", "short": "CNPC", "logo": "images/logos/cnpc_text.svg", "order": 10 },
+    { "id": 11, "name": "四川省疾控中心", "short": "SCCDC", "logo": "images/logos/sccdc_text.svg", "order": 11 },
+    { "id": 12, "name": "四川省质检院", "short": "SPQI", "logo": "images/logos/spqi.png", "order": 12 }
+  ]
+}

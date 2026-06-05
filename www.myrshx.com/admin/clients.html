@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>客户Logo管理 · 荣盛科技后台</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23004182'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'>荣</text></svg>">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <main class="main">
+            <header class="page-head">
+                <div>
+                    <div class="page-eyebrow"><span class="num">/ 08</span><span>CLIENTS</span></div>
+                    <h1 class="page-title">客户Logo管理</h1>
+                    <p class="page-subtitle">管理服务客户展示 · Logo滚动墙</p>
+                </div>
+                <button class="btn btn-primary" id="btn-new-client">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    新增客户
+                </button>
+            </header>
+
+            <div class="card">
+                <div class="card-head">
+                    <h2 class="card-title">客户列表 <span style="font-family:var(--f-mono); font-size:11px; color:var(--c-gold); margin-left:8px;">/ CLIENT LIST</span></h2>
+                    <span class="badge" id="client-count">0</span>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-num">#</th>
+                            <th>Logo</th>
+                            <th>客户名称</th>
+                            <th>简称</th>
+                            <th>排序</th>
+                            <th class="col-actions">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="client-tbody">
+                        <tr><td colspan="6" class="empty"><div class="loading dark"></div><br>加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- 新增/编辑弹窗 -->
+    <div class="modal" id="client-modal">
+        <div class="modal-mask"></div>
+        <div class="modal-body lg">
+            <div class="modal-head">
+                <div class="t">
+                    <span class="eyebrow">CLIENT · EDITOR</span>
+                    <span id="client-modal-title">新增客户</span>
+                </div>
+                <button class="modal-close" onclick="closeModal('client-modal')">×</button>
+            </div>
+            <form id="client-form">
+                <div class="modal-content">
+                    <input type="hidden" id="client-id">
+                    <input type="hidden" id="client-logo">
+
+                    <div class="form-grid">
+                        <div class="field full">
+                            <label><span>客户Logo</span><span class="hint">/ LOGO · 推荐 SVG/PNG 透明底</span></label>
+                            <div class="upload-box" id="client-upload"></div>
+                        </div>
+
+                        <div class="field">
+                            <label><span>客户名称 *</span><span class="hint">/ NAME</span></label>
+                            <input type="text" id="client-name" required placeholder="例如：中国工程物理研究院">
+                        </div>
+
+                        <div class="field">
+                            <label><span>简称</span><span class="hint">/ SHORT NAME</span></label>
+                            <input type="text" id="client-short" placeholder="例如：九院 CAEP">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('client-modal')">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script>
+        if (checkAuth()) {
+            renderSidebar('clients');
+            initClients();
+        }
+    </script>
+</body>
+</html>

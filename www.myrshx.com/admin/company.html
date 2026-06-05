@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>公司信息 · 荣盛科技后台</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23004182'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'>荣</text></svg>">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <main class="main">
+            <header class="page-head">
+                <div>
+                    <div class="page-eyebrow"><span class="num">/ 05</span><span>COMPANY · PROFILE</span></div>
+                    <h1 class="page-title">公司信息</h1>
+                    <p class="page-subtitle">联系方式 · 企业理念 · 董事长致辞</p>
+                </div>
+            </header>
+
+            <form id="company-form">
+                <!-- 基础信息 -->
+                <section class="card" style="margin-bottom:20px;">
+                    <div class="card-head">
+                        <h2 class="card-title">基础信息 <span style="font-family:var(--f-mono); font-size:11px; color:var(--c-gold); margin-left:8px;">/ BASIC</span></h2>
+                    </div>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label><span>公司名称</span><span class="hint">/ NAME</span></label>
+                            <input type="text" id="c-name" placeholder="公司全称">
+                        </div>
+                        <div class="field">
+                            <label><span>成立年份</span><span class="hint">/ FOUNDED</span></label>
+                            <input type="text" id="c-founded" placeholder="例如 1993">
+                        </div>
+                        <div class="field full">
+                            <label><span>地址</span><span class="hint">/ ADDRESS</span></label>
+                            <input type="text" id="c-address" placeholder="公司详细地址">
+                        </div>
+                        <div class="field">
+                            <label><span>服务热线</span><span class="hint">/ PHONE</span></label>
+                            <input type="text" id="c-phone" placeholder="例如 0816-2377966">
+                        </div>
+                        <div class="field">
+                            <label><span>企业邮箱</span><span class="hint">/ EMAIL</span></label>
+                            <input type="email" id="c-email" placeholder="example@company.com">
+                        </div>
+                        <div class="field">
+                            <label><span>客服经理</span><span class="hint">/ CUSTOMER SERVICE</span></label>
+                            <input type="text" id="c-customerService" placeholder="例如 安经理 17378558403">
+                        </div>
+                        <div class="field">
+                            <label><span>投诉热线</span><span class="hint">/ COMPLAINT</span></label>
+                            <input type="text" id="c-complaint" placeholder="例如 郭经理 18161019081">
+                        </div>
+                        <div class="field">
+                            <label><span>官网域名</span><span class="hint">/ WEBSITE</span></label>
+                            <input type="text" id="c-website" placeholder="www.example.com">
+                        </div>
+                        <div class="field">
+                            <label><span>口号 Slogan</span><span class="hint">/ SLOGAN</span></label>
+                            <input type="text" id="c-slogan" placeholder="一句话品牌口号">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 企业文化 -->
+                <section class="card" style="margin-bottom:20px;">
+                    <div class="card-head">
+                        <h2 class="card-title">企业理念 <span style="font-family:var(--f-mono); font-size:11px; color:var(--c-gold); margin-left:8px;">/ CULTURE</span></h2>
+                    </div>
+                    <div class="form-grid">
+                        <div class="field full">
+                            <label><span>企业使命</span><span class="hint">/ MISSION</span></label>
+                            <textarea id="c-mission" placeholder="企业使命描述"></textarea>
+                        </div>
+                        <div class="field full">
+                            <label><span>服务理念</span><span class="hint">/ SERVICE PHILOSOPHY</span></label>
+                            <input type="text" id="c-servicePhilosophy" placeholder="例如：服务更专业，客户更省心">
+                        </div>
+                        <div class="field full">
+                            <label><span>企业文化</span><span class="hint">/ CULTURE</span></label>
+                            <textarea id="c-culture" placeholder="企业文化与核心价值观"></textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 董事长致辞 -->
+                <section class="card" style="margin-bottom:24px;">
+                    <div class="card-head">
+                        <h2 class="card-title">董事长致辞 <span style="font-family:var(--f-mono); font-size:11px; color:var(--c-gold); margin-left:8px;">/ CHAIRMAN MESSAGE</span></h2>
+                    </div>
+                    <div class="field">
+                        <textarea id="c-chairman" class="lg" placeholder="董事长致辞内容..."></textarea>
+                    </div>
+                </section>
+
+                <div style="display:flex; justify-content:flex-end; gap:10px;">
+                    <button type="button" class="btn btn-secondary" onclick="location.reload()">重置</button>
+                    <button type="submit" class="btn btn-primary">保存修改</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+    <script>
+        if (checkAuth()) {
+            renderSidebar('company');
+            initCompany();
+        }
+    </script>
+</body>
+</html>

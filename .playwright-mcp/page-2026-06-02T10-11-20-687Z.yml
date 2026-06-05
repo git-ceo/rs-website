@@ -1,0 +1,1162 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "荣盛科技 荣盛科技" [ref=e5] [cursor=pointer]:
+          - /url: "#hero"
+          - img "荣盛科技" [ref=e6]
+          - generic [ref=e7]: 荣盛科技
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "首页" [ref=e10] [cursor=pointer]:
+              - /url: "#hero"
+          - listitem [ref=e11]:
+            - link "在线商城" [ref=e12] [cursor=pointer]:
+              - /url: https://sc.myrshx.com/ShopPC/#/
+          - listitem [ref=e13]:
+            - link "关于我们" [ref=e14] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e15]:
+            - link "仓储运输" [ref=e16] [cursor=pointer]:
+              - /url: logistics.html
+          - listitem [ref=e17]:
+            - link "产品服务" [ref=e18] [cursor=pointer]:
+              - /url: business.html
+          - listitem [ref=e19]:
+            - link "产品展厅" [ref=e20] [cursor=pointer]:
+              - /url: showroom.html
+          - listitem [ref=e21]:
+            - link "解决方案" [ref=e22] [cursor=pointer]:
+              - /url: solutions.html
+          - listitem [ref=e23]:
+            - link "企业荣誉" [ref=e24] [cursor=pointer]:
+              - /url: "#honors"
+          - listitem [ref=e25]:
+            - link "品牌授权" [ref=e26] [cursor=pointer]:
+              - /url: "#authorization"
+          - listitem [ref=e27]:
+            - link "新闻中心" [ref=e28] [cursor=pointer]:
+              - /url: news.html
+          - listitem [ref=e29]:
+            - link "联系我们" [ref=e30] [cursor=pointer]:
+              - /url: "#contact"
+  - main [ref=e31]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: INTELLIGENT LABORATORY SOLUTION EXPERT
+          - heading "智能实验室一站式 方案解决专家" [level=1] [ref=e37]:
+            - text: 智能实验室一站式
+            - text: 方案解决专家
+          - paragraph [ref=e38]: 专注实验室整体解决方案30余年，为教育科研、环保检测、食品安全等行业提供全方位服务
+          - generic [ref=e39]:
+            - link "了解更多" [ref=e40] [cursor=pointer]:
+              - /url: about.html
+            - link "联系我们" [ref=e41] [cursor=pointer]:
+              - /url: "#contact"
+        - generic:
+          - generic:
+            - paragraph: TRUSTED FOR OVER 30 YEARS
+            - heading "30年专注 值得信赖" [level=1]:
+              - text: 30年专注
+              - text: 值得信赖
+            - paragraph: 自1993年成立以来，始终坚持品质第一、服务至上，累计服务1000+合作客户
+            - generic:
+              - link "产品服务":
+                - /url: business.html
+              - link "解决方案":
+                - /url: "#solutions"
+        - generic:
+          - generic:
+            - paragraph: SERVICE PHILOSOPHY
+            - heading "服务更专业 客户更省心" [level=1]:
+              - text: 服务更专业
+              - text: 客户更省心
+            - paragraph: 以专业团队与完善体系，让客户专注科研本身，实验室配套交给我们
+            - generic:
+              - link "联系我们":
+                - /url: "#contact"
+              - link "关于我们":
+                - /url: about.html
+      - button "上一张" [ref=e42] [cursor=pointer]:
+        - img [ref=e43]
+      - button "下一张" [ref=e45] [cursor=pointer]:
+        - img [ref=e46]
+      - generic "服务理念" [ref=e52]:
+        - generic [ref=e53]: 服务更专业
+        - generic [ref=e55]: 客户更省心
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - heading "宣传视频" [level=2] [ref=e62]
+        - paragraph [ref=e63]: COMPANY VIDEO
+      - generic [ref=e65]:
+        - generic [ref=e66]: 您的浏览器不支持视频播放
+        - generic [ref=e67] [cursor=pointer]:
+          - img [ref=e68]
+          - text: 点击开启声音 🔊
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - heading "关于我们" [level=2] [ref=e76]
+        - paragraph [ref=e77]: 绵阳市荣盛科技有限公司
+        - paragraph [ref=e79]:
+          - link "查看完整介绍 →" [ref=e80] [cursor=pointer]:
+            - /url: about.html
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - paragraph [ref=e83]:
+            - text: 绵阳地区 最具竞争力的
+            - text: 实验室综合服务商
+          - paragraph [ref=e84]: 绵阳市荣盛科技有限公司成立于1993年，是一家专注于智能实验室配套产品以及实验室建设的企业。公司现经营场所面积1600平方米，主营业务涵盖化验室及净化室装修工程、试剂耗材销售、危险化学品仓储与运输服务、实验室仪器设备销售、排风系统及废气处理系统以及化工原料销售六大板块。
+          - paragraph [ref=e85]:
+            - text: 历经30余年发展，公司已累计服务超过1000家客户，涵盖上万余种产品，是绵阳地区实验室配套服务领域的领军企业。公司始终秉承
+            - strong [ref=e86]: 「服务更专业，客户更省心」
+            - text: 的服务理念，并以"诚信为本、创新为魂"为企业文化，致力于成为智能实验室一站式方案解决专家，助力绵阳科研事业发展。
+          - paragraph [ref=e87]: 公司是绵阳市唯一具备危险化学品、易制毒、易制爆化学品经营兼存储资质的服务商，荣获国家高新技术企业、全国守合同重信用企业等认定。
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - img [ref=e90]
+              - generic [ref=e92]: 服务更专业，客户更省心
+            - generic [ref=e93]:
+              - img [ref=e94]
+              - generic [ref=e97]: 30+年行业深耕
+            - generic [ref=e98]:
+              - img [ref=e99]
+              - generic [ref=e102]: 1000+合作客户
+            - generic [ref=e103]:
+              - img [ref=e104]
+              - generic [ref=e107]: 5000+产品种类
+            - generic [ref=e108]:
+              - img [ref=e109]
+              - generic [ref=e112]: 数字化管理体系
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - img "荣盛科技公司门头" [ref=e116]
+            - generic [ref=e118]:
+              - generic [ref=e119]: 30+
+              - generic [ref=e120]: 年行业深耕
+            - generic [ref=e121]:
+              - generic [ref=e122]: "1993"
+              - generic [ref=e123]: 年创立
+          - link "了解企业详情" [ref=e125] [cursor=pointer]:
+            - /url: about.html
+            - text: 了解企业详情
+            - img [ref=e126]
+      - generic [ref=e128]:
+        - heading "发展历程" [level=3] [ref=e129]
+        - generic "发展历程，可横向滚动查看" [ref=e130]:
+          - generic [ref=e131]:
+            - generic [ref=e134]:
+              - generic [ref=e135]: "1993"
+              - paragraph [ref=e136]: 公司在绵阳市成立，开启实验室服务之路
+            - generic [ref=e139]:
+              - generic [ref=e140]: "2005"
+              - paragraph [ref=e141]: 取得危险化学品经营许可资质，业务版图持续扩大
+            - generic [ref=e144]:
+              - generic [ref=e145]: "2008"
+              - paragraph [ref=e146]: 建立现代化的管理体系
+            - generic [ref=e149]:
+              - generic [ref=e150]: "2015"
+              - paragraph [ref=e151]: 荣获年度安全生产"先进单位"称号，客户突破500家
+            - generic [ref=e154]:
+              - generic [ref=e155]: "2017"
+              - paragraph [ref=e156]: 提出OEM战略、实验室整装战略
+            - generic [ref=e159]:
+              - generic [ref=e160]: "2020"
+              - paragraph [ref=e161]: 引入金蝶K/3cloud系统，全面开启数字化转型
+            - generic [ref=e164]:
+              - generic [ref=e165]: "2021"
+              - paragraph [ref=e166]: 数字化转型、股权激励、危化品库房建立、危化品车辆购买
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]: 为何选择我们
+        - heading "核心竞争优势" [level=2] [ref=e172]
+      - generic [ref=e174]:
+        - article [ref=e175]:
+          - generic [ref=e177]:
+            - img [ref=e179]
+            - heading "独家双资质" [level=3] [ref=e182]
+            - paragraph [ref=e183]: 绵阳唯一同时持有危险化学品、易制毒、易制爆经营兼存储资质的专业服务商，合规经营30余年。
+        - article [ref=e184]:
+          - generic [ref=e186]:
+            - img [ref=e188]
+            - heading "品类一站齐" [level=3] [ref=e191]
+            - paragraph [ref=e192]: 8000余种产品，覆盖化学试剂、实验仪器、耗材、实验台柜，与TCI、国药集团等400+品牌深度合作。
+        - article [ref=e193]:
+          - generic [ref=e195]:
+            - img [ref=e197]
+            - heading "整体解决方案" [level=3] [ref=e200]
+            - paragraph [ref=e201]: 从实验室规划设计、台柜通风柜生产安装到净化室整体交付，全流程自主实施，一次委托全包办妥。
+        - article [ref=e202]:
+          - generic [ref=e204]:
+            - img [ref=e206]
+            - heading "专车快速配送" [level=3] [ref=e211]
+            - paragraph [ref=e212]: 4辆专用配送车辆，绵阳市内当日送达，覆盖安县、江油、三台、北川等周边县市，省内外均可发货。
+    - generic [ref=e213]:
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]: 仓储与物流
+          - heading "近3000㎡专业仓储 绵阳唯一危化双资质" [level=2] [ref=e221]:
+            - text: 近3000㎡专业仓储
+            - text: 绵阳唯一危化双资质
+          - paragraph [ref=e222]: 库存货物300余万元，常备4000余种单品，4辆专用配送车，覆盖绵阳市全境及周边安县、江油、三台、北川等县市。
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - generic [ref=e225]: 3000㎡
+            - generic [ref=e226]: 专业仓储面积
+          - generic [ref=e227]:
+            - generic [ref=e228]: 4辆
+            - generic [ref=e229]: 专用配送车
+          - generic [ref=e230]:
+            - generic [ref=e231]: 4000+
+            - generic [ref=e232]: 常备单品种类
+          - generic [ref=e233]:
+            - generic [ref=e234]: 300万+
+            - generic [ref=e235]: 库存货值（元）
+      - generic [ref=e238]:
+        - generic [ref=e239]:
+          - generic [ref=e240]: CORE ADVANTAGE · 核心优势
+          - heading "绵阳 唯一 危化品存储 & 运输资质" [level=2] [ref=e242]:
+            - text: 绵阳
+            - generic [ref=e243]: 唯一
+            - text: 危化品存储 & 运输资质
+          - paragraph [ref=e244]: HAZARDOUS CHEMICALS · STORAGE & TRANSPORT
+          - paragraph [ref=e246]:
+            - text: 作为绵阳地区
+            - strong [ref=e247]: 唯一同时具备
+            - text: 危险化学品
+            - strong [ref=e248]: 经营、存储与运输三大资质
+            - text: 的服务商，我们拥有 3000㎡ 标准化危化品仓库，配备 4 辆危化品专用运输车队，严格按照国家安全生产标准建设管理，配套完善的消防、通风、防爆及监控系统，覆盖绵阳及周边地区，为客户提供安全、合规、高效的
+            - strong [ref=e249]: 危化品仓储与配送一站式服务
+            - text: 。
+          - link "了解仓储运输" [ref=e250] [cursor=pointer]:
+            - /url: logistics.html
+            - text: 了解仓储运输
+            - img [ref=e251]
+        - generic [ref=e253]:
+          - generic [ref=e254]:
+            - generic [ref=e255]:
+              - img "危化品仓库全景" [ref=e256]
+              - generic [ref=e257]: 仓库全景
+            - generic [ref=e259]:
+              - img "规范化货架与桶装存储" [ref=e260]
+              - generic [ref=e261]: 规范存储
+            - generic [ref=e263]:
+              - img "危化品专用运输车队" [ref=e264]
+              - generic [ref=e265]: 专用运输车
+              - generic [ref=e267]: 危险品 · 川B牌
+            - generic [ref=e268]:
+              - img "安全管理与防护设施" [ref=e269]
+              - generic [ref=e270]: 安全设施
+            - generic [ref=e272]:
+              - img "成品仓储与发货区" [ref=e273]
+              - generic [ref=e274]: 发货分拣
+            - generic [ref=e276]:
+              - img "仓库分区管理" [ref=e277]
+              - generic [ref=e278]: 分区管理
+            - generic [ref=e280]:
+              - img "危化品存储罐" [ref=e281]
+              - generic [ref=e282]: 存储罐
+            - generic [ref=e284]:
+              - img "露天危化品存储罐" [ref=e285]
+              - generic [ref=e286]: 露天罐区
+          - paragraph [ref=e288]: "* 实景图"
+          - list [ref=e289]:
+            - listitem [ref=e290]:
+              - generic [ref=e291]: ▸
+              - generic [ref=e292]: 危化品经营 · 存储 · 运输 三证齐全
+            - listitem [ref=e293]:
+              - generic [ref=e294]: ▸
+              - generic [ref=e295]: 覆盖绵阳全域及周边地市定向配送
+            - listitem [ref=e296]:
+              - generic [ref=e297]: ▸
+              - generic [ref=e298]:
+                - text: 绵阳本地客户
+                - strong [ref=e299]: 当日下单 · 当日可达
+            - listitem [ref=e300]:
+              - generic [ref=e301]: ▸
+              - generic [ref=e302]: 商品验收合格率 100% · 配送一次合格率 99%+
+    - generic [ref=e304]:
+      - generic [ref=e305]:
+        - heading "董事长致辞" [level=2] [ref=e307]
+        - paragraph [ref=e308]: CHAIRMAN'S MESSAGE
+      - generic [ref=e310]:
+        - generic [ref=e311]:
+          - img [ref=e313]
+          - generic [ref=e316]:
+            - heading "董事长" [level=4] [ref=e317]
+            - paragraph [ref=e318]: 绵阳市荣盛科技有限公司
+            - img [ref=e320]
+        - generic [ref=e322]:
+          - text: “
+          - paragraph [ref=e324]: ......
+    - generic [ref=e326]:
+      - generic [ref=e327]:
+        - heading "企业架构" [level=2] [ref=e329]
+        - paragraph [ref=e330]: ORGANIZATION STRUCTURE
+      - generic [ref=e332]:
+        - generic [ref=e334]: 董事长
+        - generic [ref=e337]:
+          - generic [ref=e340]: 外事总裁
+          - generic [ref=e343]: 总经理
+        - generic [ref=e346]:
+          - generic [ref=e347]:
+            - generic [ref=e349]: 数字信息中心
+            - generic [ref=e350]:
+              - generic [ref=e352]: 数字信息部
+              - generic [ref=e354]: 产品管理部
+          - generic [ref=e355]:
+            - generic [ref=e357]: 销售中心
+            - generic [ref=e358]:
+              - generic [ref=e360]: 销售公司
+              - generic [ref=e362]: 电商运营部
+              - generic [ref=e364]: 工程部
+          - generic [ref=e365]:
+            - generic [ref=e367]: 管理中心
+            - generic [ref=e370]: 财务人事等
+          - generic [ref=e371]:
+            - generic [ref=e373]: 安全售后中心
+            - generic [ref=e374]:
+              - generic [ref=e376]: 安全小组
+              - generic [ref=e378]: 安装维修
+              - generic [ref=e380]: 仓储运输
+      - paragraph [ref=e381]: 公司设董事长统筹全局，下设外事总裁与总经理。总经理统管数字信息中心、销售中心、管理中心、安全售后中心四大核心业务单元，各部门协同高效运作，确保公司各项业务稳健发展。
+    - generic [ref=e384]:
+      - generic [ref=e385]:
+        - generic [ref=e386]:
+          - text: "1993"
+          - emphasis [ref=e387]: 年
+        - paragraph [ref=e388]: 品牌创立
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - text: "0"
+          - emphasis [ref=e392]: +
+        - paragraph [ref=e393]: 经营产品种类
+      - generic [ref=e395]:
+        - generic [ref=e396]:
+          - text: "0"
+          - emphasis [ref=e397]: +
+        - paragraph [ref=e398]: 合作知名品牌
+      - generic [ref=e400]:
+        - generic [ref=e401]:
+          - text: "1"
+          - emphasis [ref=e402]: 亿+
+        - paragraph [ref=e403]: 年销售额（元）
+      - generic [ref=e405]:
+        - generic [ref=e406]:
+          - text: "0"
+          - emphasis [ref=e407]: +
+        - paragraph [ref=e408]: 合作客户
+    - generic [ref=e410]:
+      - generic [ref=e411]:
+        - generic [ref=e412]: DIGITAL STRATEGY
+        - heading "数字战略目标" [level=2] [ref=e413]
+        - paragraph [ref=e415]: 2022-2026年销售额增长规划
+      - generic [ref=e416]:
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - generic [ref=e419]: 2.5亿
+            - generic [ref=e420]: 2亿
+            - generic [ref=e421]: 1.5亿
+            - generic [ref=e422]: 1亿
+            - generic [ref=e423]: 0.5亿
+            - generic [ref=e424]: "0"
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - generic [ref=e428]:
+                - generic: 1.15亿
+              - generic [ref=e431]: 2022年
+              - generic [ref=e432]: 已完成
+            - generic [ref=e433]:
+              - generic [ref=e435]:
+                - generic: 1.21亿
+              - generic [ref=e438]: 2023年
+              - generic [ref=e439]: 已完成
+            - generic [ref=e440]:
+              - generic [ref=e442]:
+                - generic: 1.4亿
+              - generic [ref=e445]: 2024年
+              - generic [ref=e446]: 目标
+            - generic [ref=e447]:
+              - generic [ref=e449]:
+                - generic: 1.6亿
+              - generic [ref=e452]: 2025年
+              - generic [ref=e453]: 目标
+            - generic [ref=e454]:
+              - generic [ref=e456]:
+                - generic: 2亿
+              - generic [ref=e459]: 2026年
+              - generic [ref=e460]: 目标
+        - generic [ref=e461]:
+          - generic [ref=e462]: 已完成
+          - generic [ref=e464]: 战略目标
+    - generic [ref=e467]:
+      - generic [ref=e468]:
+        - heading "产品中心" [level=2] [ref=e470]
+        - paragraph [ref=e471]: PRODUCTS & SERVICES
+        - paragraph [ref=e473]:
+          - link "查看完整产品服务 →" [ref=e474] [cursor=pointer]:
+            - /url: business.html
+      - generic [ref=e475]:
+        - generic [ref=e476]:
+          - generic [ref=e477]:
+            - text: "31"
+            - emphasis [ref=e478]: 年
+          - generic [ref=e479]: 行业深耕
+        - generic [ref=e481]:
+          - generic [ref=e482]:
+            - text: "4000"
+            - emphasis [ref=e483]: +
+          - generic [ref=e484]: 常备单品
+        - generic [ref=e486]:
+          - generic [ref=e487]:
+            - text: "45"
+            - emphasis [ref=e488]: +
+          - generic [ref=e489]: 代理品牌
+        - generic [ref=e491]:
+          - generic [ref=e492]:
+            - text: "3000"
+            - emphasis [ref=e493]: ㎡
+          - generic [ref=e494]: 现代化仓库
+      - generic [ref=e495]:
+        - generic [ref=e499]:
+          - img [ref=e501]
+          - heading "化验室·净化室装修工程" [level=4] [ref=e505]
+          - paragraph [ref=e506]: 提供从规划设计、生产施工到安装售后的一站式实验室整体解决方案，产品安全、人性化、功能化，已达同行业一流水平。
+          - list [ref=e507]:
+            - listitem [ref=e508]:
+              - generic [ref=e509]: ✓
+              - text: 实验室整体规划设计
+            - listitem [ref=e510]:
+              - generic [ref=e511]: ✓
+              - text: 通风柜与试验台配套
+            - listitem [ref=e512]:
+              - generic [ref=e513]: ✓
+              - text: 净化室洁净工程
+            - listitem [ref=e514]:
+              - generic [ref=e515]: ✓
+              - text: 专业工程团队保障
+          - link "了解更多 →" [ref=e516] [cursor=pointer]:
+            - /url: "#contact"
+            - text: 了解更多
+            - generic [ref=e517]: →
+        - generic [ref=e521]:
+          - img [ref=e523]
+          - heading "试剂耗材销售" [level=4] [ref=e527]
+          - paragraph [ref=e528]: 覆盖分析纯、优级纯等各级别化学试剂，常备单品4000余种，库存货物达300余万元，迅速满足客户多样化需求。
+          - list [ref=e529]:
+            - listitem [ref=e530]:
+              - generic [ref=e531]: ✓
+              - text: 国药、阿拉丁、麦克林等国产
+            - listitem [ref=e532]:
+              - generic [ref=e533]: ✓
+              - text: 赛默飞、TCI、Sigma等进口
+            - listitem [ref=e534]:
+              - generic [ref=e535]: ✓
+              - text: 标准物质与稳定同位素
+            - listitem [ref=e536]:
+              - generic [ref=e537]: ✓
+              - text: 4000+常备单品
+          - link "了解更多 →" [ref=e538] [cursor=pointer]:
+            - /url: "#contact"
+            - text: 了解更多
+            - generic [ref=e539]: →
+        - generic [ref=e543]:
+          - img [ref=e545]
+          - heading "危化品仓储·运输服务" [level=4] [ref=e550]
+          - paragraph [ref=e551]: 绵阳唯一具备危险化学品、易制毒、易制爆化学品经营兼存储许可的服务商，近3000平米现代化仓库，覆盖川北及周边区域。
+          - list [ref=e552]:
+            - listitem [ref=e553]:
+              - generic [ref=e554]: ✓
+              - text: 三证齐全资质保障
+            - listitem [ref=e555]:
+              - generic [ref=e556]: ✓
+              - text: 3000㎡现代化仓库
+            - listitem [ref=e557]:
+              - generic [ref=e558]: ✓
+              - text: 4辆专用配送车辆
+            - listitem [ref=e559]:
+              - generic [ref=e560]: ✓
+              - text: 覆盖川北10+区县
+          - link "了解更多 →" [ref=e561] [cursor=pointer]:
+            - /url: "#contact"
+            - text: 了解更多
+            - generic [ref=e562]: →
+        - generic [ref=e566]:
+          - img [ref=e568]
+          - heading "实验室仪器设备" [level=4] [ref=e571]
+          - paragraph [ref=e572]: 代理国内外知名品牌实验室仪器设备，涵盖水质分析、通用仪器、分析仪器、专业设备，应用于科研、教育、生产制造等领域。
+          - list [ref=e573]:
+            - listitem [ref=e574]:
+              - generic [ref=e575]: ✓
+              - text: 一恒、雷磁、连华等国产精品
+            - listitem [ref=e576]:
+              - generic [ref=e577]: ✓
+              - text: Mettler、Eppendorf等进口高端
+            - listitem [ref=e578]:
+              - generic [ref=e579]: ✓
+              - text: 分光光度计/色谱/天平等
+            - listitem [ref=e580]:
+              - generic [ref=e581]: ✓
+              - text: 完善的售后维修服务
+          - link "了解更多 →" [ref=e582] [cursor=pointer]:
+            - /url: "#contact"
+            - text: 了解更多
+            - generic [ref=e583]: →
+        - generic [ref=e587]:
+          - img [ref=e589]
+          - heading "化工原料销售" [level=4] [ref=e592]
+          - paragraph [ref=e593]: 常备工业盐酸、硫酸、甲醇、聚氯化铝等多种化工原料，主推科研斯达污水聚氯化铝品牌，质量稳定可靠，满足工业生产及科研需求。
+          - list [ref=e594]:
+            - listitem [ref=e595]:
+              - generic [ref=e596]: ✓
+              - text: 工业级酸碱原料
+            - listitem [ref=e597]:
+              - generic [ref=e598]: ✓
+              - text: 污水处理专用试剂
+            - listitem [ref=e599]:
+              - generic [ref=e600]: ✓
+              - text: 长期稳定供货
+            - listitem [ref=e601]:
+              - generic [ref=e602]: ✓
+              - text: 质量三包保障
+          - link "了解更多 →" [ref=e603] [cursor=pointer]:
+            - /url: "#contact"
+            - text: 了解更多
+            - generic [ref=e604]: →
+        - generic [ref=e608]:
+          - img [ref=e610]
+          - heading "排风系统及废气处理系统" [level=4] [ref=e613]
+          - paragraph [ref=e614]: 提供实验室排风系统设计与安装、废气处理设备配套服务，确保实验室环境安全达标，符合环保规范要求。
+          - list [ref=e615]:
+            - listitem [ref=e616]:
+              - generic [ref=e617]: ✓
+              - text: 通风系统设计安装
+            - listitem [ref=e618]:
+              - generic [ref=e619]: ✓
+              - text: 废气处理设备配套
+            - listitem [ref=e620]:
+              - generic [ref=e621]: ✓
+              - text: 环保合规达标
+            - listitem [ref=e622]:
+              - generic [ref=e623]: ✓
+              - text: 专业运维保障
+          - link "了解更多 →" [ref=e624] [cursor=pointer]:
+            - /url: "#contact"
+            - text: 了解更多
+            - generic [ref=e625]: →
+      - generic [ref=e626]:
+        - generic [ref=e627]:
+          - heading "合作品牌伙伴" [level=3] [ref=e628]
+          - generic [ref=e629]: OUR PARTNERS
+          - paragraph [ref=e631]: 与45+国内外知名品牌建立长期合作
+        - generic [ref=e632]:
+          - img "Thermo Fisher" [ref=e634]
+          - img "Sigma-Aldrich" [ref=e636]
+          - generic [ref=e638]: Alfa Aesar
+          - generic [ref=e640]: TCI
+          - generic [ref=e642]: Merck Millipore
+          - img "3M" [ref=e644]
+          - img "Mettler Toledo" [ref=e646]
+          - img "Eppendorf" [ref=e648]
+          - generic [ref=e650]: Liebherr
+          - generic [ref=e652]: Hellma
+          - generic [ref=e654]: Polymer Source
+          - img "J&K" [ref=e656]
+          - generic [ref=e658]: TrisKem
+          - img "AS ONE" [ref=e660]
+          - img "Synthware" [ref=e662]
+          - generic [ref=e664]:
+            - text: 国药 沪试
+            - emphasis [ref=e665]: SINOPHARM
+          - img "阿拉丁" [ref=e667]
+          - generic [ref=e669]:
+            - text: 麦克林
+            - emphasis [ref=e670]: Macklin
+          - img "毕得" [ref=e672]
+          - generic [ref=e674]:
+            - text: 坛墨质检
+            - emphasis [ref=e675]: Tanmo
+          - generic [ref=e677]:
+            - text: 沃凯
+            - emphasis [ref=e678]: Greagent
+          - img "上海一恒" [ref=e680]
+          - generic [ref=e682]:
+            - text: 上海仪电分析
+            - emphasis [ref=e683]: INESA
+          - img "雷磁" [ref=e685]
+          - img "成都连华" [ref=e687]
+          - generic [ref=e689]:
+            - text: 合肥科晶
+            - emphasis [ref=e690]: MTI
+          - generic [ref=e692]:
+            - text: 天津天科
+            - emphasis [ref=e693]: TIANKE
+          - img "蜀玻蜀牛" [ref=e695]
+          - img "科研斯达" [ref=e697]
+          - img "上海众御" [ref=e699]
+      - generic [ref=e701]:
+        - generic [ref=e702]:
+          - generic [ref=e703]: PRODUCT SHOWROOM
+          - heading "产品展厅 · 常卖品精选" [level=3] [ref=e704]
+          - paragraph [ref=e705]: 浏览公司常备热销产品，化学试剂、玻璃器皿、实验耗材、仪器设备即需即取
+        - link "进入产品展厅 →" [ref=e706] [cursor=pointer]:
+          - /url: showroom.html
+    - generic [ref=e708]:
+      - generic [ref=e709]:
+        - heading "解决方案" [level=2] [ref=e711]
+        - paragraph [ref=e712]: SOLUTIONS
+      - generic [ref=e714]:
+        - link "01 教育科研实验室 为高校及科研院所提供实验室整体规划、建设及配套设备耗材一站式服务，助力科研创新。" [ref=e715] [cursor=pointer]:
+          - /url: solutions.html#01
+          - generic [ref=e716]: "01"
+          - heading "教育科研实验室" [level=4] [ref=e717]
+          - paragraph [ref=e718]: 为高校及科研院所提供实验室整体规划、建设及配套设备耗材一站式服务，助力科研创新。
+        - link "02 环保检测实验室 提供环境监测实验室建设方案，涵盖水质、土壤、大气等检测所需全套设备与耗材。" [ref=e719] [cursor=pointer]:
+          - /url: solutions.html#02
+          - generic [ref=e720]: "02"
+          - heading "环保检测实验室" [level=4] [ref=e721]
+          - paragraph [ref=e722]: 提供环境监测实验室建设方案，涵盖水质、土壤、大气等检测所需全套设备与耗材。
+        - link "03 食品安全检测 针对食品安全检测需求，提供从实验室建设到检测设备、标准试剂的全链条解决方案。" [ref=e723] [cursor=pointer]:
+          - /url: solutions.html#03
+          - generic [ref=e724]: "03"
+          - heading "食品安全检测" [level=4] [ref=e725]
+          - paragraph [ref=e726]: 针对食品安全检测需求，提供从实验室建设到检测设备、标准试剂的全链条解决方案。
+        - link "04 医疗卫生实验室 为医疗卫生机构提供符合GMP/GLP标准的实验室建设及配套服务，保障检验质量。" [ref=e727] [cursor=pointer]:
+          - /url: solutions.html#04
+          - generic [ref=e728]: "04"
+          - heading "医疗卫生实验室" [level=4] [ref=e729]
+          - paragraph [ref=e730]: 为医疗卫生机构提供符合GMP/GLP标准的实验室建设及配套服务，保障检验质量。
+        - link "05 工业制造实验室 服务工业制造企业质检实验室需求，提供仪器设备、试剂耗材及技术支持全套方案。" [ref=e731] [cursor=pointer]:
+          - /url: solutions.html#05
+          - generic [ref=e732]: "05"
+          - heading "工业制造实验室" [level=4] [ref=e733]
+          - paragraph [ref=e734]: 服务工业制造企业质检实验室需求，提供仪器设备、试剂耗材及技术支持全套方案。
+        - link "06 定制化实验室方案 根据客户个性化需求，量身定制实验室解决方案，从规划设计到建设运维全程服务。" [ref=e735] [cursor=pointer]:
+          - /url: solutions.html#06
+          - generic [ref=e736]: "06"
+          - heading "定制化实验室方案" [level=4] [ref=e737]
+          - paragraph [ref=e738]: 根据客户个性化需求，量身定制实验室解决方案，从规划设计到建设运维全程服务。
+    - generic [ref=e740]:
+      - generic [ref=e741]:
+        - heading "企业实力" [level=2] [ref=e743]
+        - paragraph [ref=e744]: OUR STRENGTH
+      - generic [ref=e747]:
+        - button "社会责任" [ref=e748] [cursor=pointer]:
+          - img [ref=e749]
+          - generic [ref=e751]: 社会责任
+        - button "品牌价值" [ref=e752] [cursor=pointer]:
+          - img [ref=e753]
+          - generic [ref=e755]: 品牌价值
+        - button "行业地位" [ref=e756] [cursor=pointer]:
+          - img [ref=e757]
+          - generic [ref=e759]: 行业地位
+        - button "管理实践" [ref=e760] [cursor=pointer]:
+          - img [ref=e761]
+          - generic [ref=e764]: 管理实践
+        - button "服务客群" [ref=e765] [cursor=pointer]:
+          - img [ref=e766]
+          - generic [ref=e770]: 服务客群
+      - generic [ref=e773]:
+        - generic [ref=e774]:
+          - article [ref=e775]:
+            - generic [ref=e776]: "01"
+            - paragraph [ref=e777]: 被评为绵阳市涪城区「爱心企业」
+          - article [ref=e778]:
+            - generic [ref=e779]: "02"
+            - paragraph [ref=e780]: 被涪城区工区街道评为先进单位
+          - article [ref=e781]:
+            - generic [ref=e782]: "03"
+            - paragraph [ref=e783]: 多年支持地方公益事业与教育项目
+          - article [ref=e784]:
+            - generic [ref=e785]: "04"
+            - paragraph [ref=e786]: 积极参与社区环保与安全生产宣传
+        - complementary [ref=e787]:
+          - generic [ref=e789]:
+            - generic [ref=e790]: CSR
+            - heading "社会责任 回馈社会" [level=3] [ref=e791]:
+              - text: 社会责任
+              - text: 回馈社会
+            - paragraph [ref=e792]: 深耕本地，以专业能力与资源持续投身公益、教育与社区共建。
+            - generic [ref=e793]:
+              - generic [ref=e794]:
+                - strong [ref=e795]: 爱心
+                - generic [ref=e796]: 企业荣誉
+              - generic [ref=e797]:
+                - strong [ref=e798]: 多年
+                - generic [ref=e799]: 公益践行
+    - generic [ref=e800]:
+      - generic [ref=e802]:
+        - generic [ref=e803]: OUR CLIENTS
+        - heading "服务客户" [level=2] [ref=e804]
+        - paragraph [ref=e805]: 携手众多知名科研、高校、企业机构，共建一站式实验室解决方案
+      - generic [ref=e807]:
+        - generic [ref=e808]:
+          - img "中国工程物理研究院"
+          - generic [ref=e809]: 中国工程物理研究院
+        - generic [ref=e810]:
+          - img "西南科技大学"
+          - generic [ref=e811]: 西南科技大学
+        - generic [ref=e812]:
+          - img "绵阳师范学院"
+          - generic [ref=e813]: 绵阳师范学院
+        - generic [ref=e814]:
+          - img "中国空气动力研究与发展中心"
+          - generic [ref=e815]: 中国空气动力研究与发展中心
+        - generic [ref=e816]:
+          - img "四川长虹"
+          - generic [ref=e817]: 四川长虹
+        - generic [ref=e818]:
+          - img "四川九洲"
+          - generic [ref=e819]: 四川九洲
+        - generic [ref=e820]:
+          - img "好医生药业"
+          - generic [ref=e821]: 好医生药业
+        - generic [ref=e822]:
+          - img "四川东材科技"
+          - generic [ref=e823]: 四川东材科技
+        - generic [ref=e824]:
+          - img "西南交通大学"
+          - generic [ref=e825]: 西南交通大学
+        - generic [ref=e826]:
+          - img "中国石油"
+          - generic [ref=e827]: 中国石油
+        - generic [ref=e828]:
+          - img "四川省疾控中心"
+          - generic [ref=e829]: 四川省疾控中心
+        - generic [ref=e830]:
+          - img "四川省质检院"
+          - generic [ref=e831]: 四川省质检院
+        - generic [ref=e832]:
+          - img "中国工程物理研究院"
+          - generic [ref=e833]: 中国工程物理研究院
+        - generic [ref=e834]:
+          - img "西南科技大学"
+          - generic [ref=e835]: 西南科技大学
+        - generic [ref=e836]:
+          - img "绵阳师范学院"
+          - generic [ref=e837]: 绵阳师范学院
+        - generic [ref=e838]:
+          - img "中国空气动力研究与发展中心"
+          - generic [ref=e839]: 中国空气动力研究与发展中心
+        - generic [ref=e840]:
+          - img "四川长虹"
+          - generic [ref=e841]: 四川长虹
+        - generic [ref=e842]:
+          - img "四川九洲"
+          - generic [ref=e843]: 四川九洲
+        - generic [ref=e844]:
+          - img "好医生药业"
+          - generic [ref=e845]: 好医生药业
+        - generic [ref=e846]:
+          - img "四川东材科技"
+          - generic [ref=e847]: 四川东材科技
+        - generic [ref=e848]:
+          - img "西南交通大学"
+          - generic [ref=e849]: 西南交通大学
+        - generic [ref=e850]:
+          - img "中国石油"
+          - generic [ref=e851]: 中国石油
+        - generic [ref=e852]:
+          - img "四川省疾控中心"
+          - generic [ref=e853]: 四川省疾控中心
+        - generic [ref=e854]:
+          - img "四川省质检院"
+          - generic [ref=e855]: 四川省质检院
+    - generic [ref=e857]:
+      - generic [ref=e858]:
+        - heading "企业荣誉" [level=2] [ref=e860]
+        - paragraph [ref=e861]: HONORS & AWARDS
+      - generic [ref=e863]:
+        - generic [ref=e864]:
+          - generic [ref=e866]: 2012年4月
+          - img [ref=e868]
+          - paragraph [ref=e870]:
+            - text: 荣获2011年度易制毒化学品管理工作
+            - text: "\"优秀企业\"称号"
+        - generic [ref=e871]:
+          - generic [ref=e873]: 2016年4月
+          - img [ref=e875]
+          - paragraph [ref=e877]:
+            - text: 荣获2015年度安全生产工作
+            - text: "\"先进单位\"称号"
+        - generic [ref=e878]:
+          - generic [ref=e880]: 2022年9月
+          - img [ref=e882]
+          - paragraph [ref=e884]:
+            - text: 荣获2022年度绵阳市涪城区
+            - text: 民营企业调查点工作"先进单位"称号
+        - generic [ref=e885]:
+          - generic [ref=e887]: 2022年12月
+          - img [ref=e889]
+          - paragraph [ref=e891]:
+            - text: 被绵阳中小商会
+            - text: 评为爱心企业
+        - generic [ref=e892]:
+          - generic [ref=e894]: 2023年12月
+          - img [ref=e896]
+          - paragraph [ref=e898]:
+            - text: 绵阳市企业联合会/企业家协会授予
+            - text: "\"绵阳市服务业企业50强\""
+      - generic [ref=e899]:
+        - heading "资质证书" [level=3] [ref=e900]
+        - generic:
+          - generic:
+            - img "危险化学品经营许可证"
+          - generic:
+            - generic:
+              - img "非药品类易制毒化学品经营备案证明"
+          - generic:
+            - img "易制爆危险化学品从业单位备案证明"
+    - generic [ref=e902]:
+      - generic [ref=e903]:
+        - heading "品牌授权" [level=2] [ref=e905]
+        - paragraph [ref=e906]: BRAND AUTHORIZATION
+        - paragraph [ref=e908]: 获得国内外二十余家知名品牌的官方授权 · 原厂正品 · 渠道可溯 · 售后无忧
+      - generic [ref=e909]:
+        - generic [ref=e910]:
+          - generic [ref=e911]:
+            - text: "20"
+            - superscript [ref=e912]: +
+          - generic [ref=e913]: 授权品牌
+        - generic [ref=e915]:
+          - generic [ref=e916]: 2大
+          - generic [ref=e917]: 业务品类
+        - generic [ref=e919]:
+          - generic [ref=e920]: 100%
+          - generic [ref=e921]: 原厂可溯
+        - generic [ref=e923]:
+          - generic [ref=e924]:
+            - text: "30"
+            - superscript [ref=e925]: 余载
+          - generic [ref=e926]: 渠道沉淀
+      - generic [ref=e927]:
+        - generic [ref=e928]:
+          - generic [ref=e929]: "01"
+          - generic [ref=e930]:
+            - heading "化学试剂授权" [level=3] [ref=e931]
+            - paragraph [ref=e932]: CHEMICAL REAGENT · 进口/国产高纯试剂、生化耗材、个人防护
+        - generic [ref=e934]:
+          - figure "阿拉丁 / 芯硅谷 aladdin · i-Quip" [ref=e935]:
+            - generic [ref=e936]:
+              - img "阿拉丁授权书" [ref=e937]
+              - generic [ref=e938]: +
+            - generic [ref=e939]:
+              - generic [ref=e940]: 阿拉丁 / 芯硅谷
+              - generic [ref=e941]: aladdin · i-Quip
+          - figure "麦克林 MACKLIN" [ref=e942]:
+            - generic [ref=e943]:
+              - img "麦克林授权书" [ref=e944]
+              - generic [ref=e945]: +
+            - generic [ref=e946]:
+              - generic [ref=e947]: 麦克林
+              - generic [ref=e948]: MACKLIN
+          - figure "毕得医药 Bidepharm" [ref=e949]:
+            - generic [ref=e950]:
+              - img "毕得医药授权书" [ref=e951]
+              - generic [ref=e952]: +
+            - generic [ref=e953]:
+              - generic [ref=e954]: 毕得医药
+              - generic [ref=e955]: Bidepharm
+          - figure "国药集团 Sinopharm · 沪试/京试/沃凯/SCRC" [ref=e956]:
+            - generic [ref=e957]:
+              - img "国药集团授权书" [ref=e958]
+              - generic [ref=e959]: +
+            - generic [ref=e960]:
+              - generic [ref=e961]: 国药集团
+              - generic [ref=e962]: Sinopharm · 沪试/京试/沃凯/SCRC
+          - figure "致远化学 · 太阳牌 Tianjin Zhiyuan" [ref=e963]:
+            - generic [ref=e964]:
+              - img "天津致远化学（太阳牌）授权书" [ref=e965]
+              - generic [ref=e966]: +
+            - generic [ref=e967]:
+              - generic [ref=e968]: 致远化学 · 太阳牌
+              - generic [ref=e969]: Tianjin Zhiyuan
+          - figure "成都金山化学 Chengdu Jinshan" [ref=e970]:
+            - generic [ref=e971]:
+              - img "成都金山化学试剂授权书" [ref=e972]
+              - generic [ref=e973]: +
+            - generic [ref=e974]:
+              - generic [ref=e975]: 成都金山化学
+              - generic [ref=e976]: Chengdu Jinshan
+          - figure "天津科密欧 KERMEL" [ref=e977]:
+            - generic [ref=e978]:
+              - img "天津科密欧化学授权书" [ref=e979]
+              - generic [ref=e980]: +
+            - generic [ref=e981]:
+              - generic [ref=e982]: 天津科密欧
+              - generic [ref=e983]: KERMEL
+          - figure "广东光华科技 Guanghua Sci-Tech" [ref=e984]:
+            - generic [ref=e985]:
+              - img "广东光华科技授权书" [ref=e986]
+              - generic [ref=e987]: +
+            - generic [ref=e988]:
+              - generic [ref=e989]: 广东光华科技
+              - generic [ref=e990]: Guanghua Sci-Tech
+          - figure "科隆化学 CHRON CHEMICALS" [ref=e991]:
+            - generic [ref=e992]:
+              - img "科隆化学授权书" [ref=e993]
+              - generic [ref=e994]: +
+            - generic [ref=e995]:
+              - generic [ref=e996]: 科隆化学
+              - generic [ref=e997]: CHRON CHEMICALS
+          - figure "上海三爱思 SSS Reagent" [ref=e998]:
+            - generic [ref=e999]:
+              - img "上海三爱思试剂授权书" [ref=e1000]
+              - generic [ref=e1001]: +
+            - generic [ref=e1002]:
+              - generic [ref=e1003]: 上海三爱思
+              - generic [ref=e1004]: SSS Reagent
+          - figure "金佰利 Kimberly-Clark · KIMTECH/KLEENEX" [ref=e1005]:
+            - generic [ref=e1006]:
+              - img "金佰利授权书" [ref=e1007]
+              - generic [ref=e1008]: +
+            - generic [ref=e1009]:
+              - generic [ref=e1010]: 金佰利
+              - generic [ref=e1011]: Kimberly-Clark · KIMTECH/KLEENEX
+          - figure "天玻 Tianjin Tianbo Glassware" [ref=e1012]:
+            - generic [ref=e1013]:
+              - img "天津天玻玻璃仪器授权书" [ref=e1014]
+              - generic [ref=e1015]: +
+            - generic [ref=e1016]:
+              - generic [ref=e1017]: 天玻
+              - generic [ref=e1018]: Tianjin Tianbo Glassware
+      - generic [ref=e1019]:
+        - generic [ref=e1020]:
+          - generic [ref=e1021]: "02"
+          - generic [ref=e1022]:
+            - heading "仪器设备授权" [level=3] [ref=e1023]
+            - paragraph [ref=e1024]: INSTRUMENT & EQUIPMENT · 分析天平、水质检测、光学仪器、医用耗材
+        - generic [ref=e1026]:
+          - figure "梅特勒-托利多 METTLER TOLEDO" [ref=e1027]:
+            - generic [ref=e1028]:
+              - img "梅特勒-托利多授权书" [ref=e1029]
+              - generic [ref=e1030]: +
+            - generic [ref=e1031]:
+              - generic [ref=e1032]: 梅特勒-托利多
+              - generic [ref=e1033]: METTLER TOLEDO
+          - figure "雷磁 · 上海仪电 Leici · INESA" [ref=e1034]:
+            - generic [ref=e1035]:
+              - img "上海仪电（雷磁）授权书" [ref=e1036]
+              - generic [ref=e1037]: +
+            - generic [ref=e1038]:
+              - generic [ref=e1039]: 雷磁 · 上海仪电
+              - generic [ref=e1040]: Leici · INESA
+          - figure "连华科技 Lianhua Tech · 水质检测" [ref=e1041]:
+            - generic [ref=e1042]:
+              - img "北京连华永兴授权书" [ref=e1043]
+              - generic [ref=e1044]: +
+            - generic [ref=e1045]:
+              - generic [ref=e1046]: 连华科技
+              - generic [ref=e1047]: Lianhua Tech · 水质检测
+          - figure "沈阳科晶 Shenyang Kejing Automation" [ref=e1048]:
+            - generic [ref=e1049]:
+              - img "沈阳科晶自动化设备授权书" [ref=e1050]
+              - generic [ref=e1051]: +
+            - generic [ref=e1052]:
+              - generic [ref=e1053]: 沈阳科晶
+              - generic [ref=e1054]: Shenyang Kejing Automation
+          - figure "凤凰光学 Jiangxi Phoenix Optical" [ref=e1055]:
+            - generic [ref=e1056]:
+              - img "江西凤凰光学授权书" [ref=e1057]
+              - generic [ref=e1058]: +
+            - generic [ref=e1059]:
+              - generic [ref=e1060]: 凤凰光学
+              - generic [ref=e1061]: Jiangxi Phoenix Optical
+          - figure "泰斯特 TAISITE Instruments" [ref=e1062]:
+            - generic [ref=e1063]:
+              - img "天津泰斯特仪器授权书" [ref=e1064]
+              - generic [ref=e1065]: +
+            - generic [ref=e1066]:
+              - generic [ref=e1067]: 泰斯特
+              - generic [ref=e1068]: TAISITE Instruments
+          - figure "伟业计量 · BNCC Beijing North Weiye / BNCC" [ref=e1069]:
+            - generic [ref=e1070]:
+              - img "北方伟业计量集团授权书" [ref=e1071]
+              - generic [ref=e1072]: +
+            - generic [ref=e1073]:
+              - generic [ref=e1074]: 伟业计量 · BNCC
+              - generic [ref=e1075]: Beijing North Weiye / BNCC
+          - figure "麦迪康 Medicom Healthcare" [ref=e1076]:
+            - generic [ref=e1077]:
+              - img "麦迪康医疗用品授权书" [ref=e1078]
+              - generic [ref=e1079]: +
+            - generic [ref=e1080]:
+              - generic [ref=e1081]: 麦迪康
+              - generic [ref=e1082]: Medicom Healthcare
+      - paragraph [ref=e1085]: 以上授权资料均为原件扫描件，授权品牌持续更新中。如需查验授权资质，欢迎联系销售经理获取最新版授权文件。
+    - generic [ref=e1087]:
+      - generic [ref=e1088]:
+        - heading "新闻动态" [level=2] [ref=e1090]
+        - paragraph [ref=e1091]: LATEST NEWS
+        - paragraph [ref=e1093]:
+          - link "进入新闻中心 →" [ref=e1094] [cursor=pointer]:
+            - /url: news.html
+      - generic [ref=e1095]:
+        - generic [ref=e1096]:
+          - generic [ref=e1098]:
+            - generic [ref=e1099]: "15"
+            - generic [ref=e1100]: "2024.06"
+          - generic [ref=e1101]:
+            - heading "公司成功收购科赛斯特，开拓成都市场" [level=4] [ref=e1102]
+            - paragraph [ref=e1103]: 2024年，公司完成对科赛斯特的收购，在成都成立专业团队，正式开拓成都业务市场，标志着公司区域化发展战略迈出重要一步。
+            - link "阅读全文 →" [ref=e1104] [cursor=pointer]:
+              - /url: news-detail.html?id=news-001
+        - generic [ref=e1105]:
+          - generic [ref=e1107]:
+            - generic [ref=e1108]: "20"
+            - generic [ref=e1109]: "2024.03"
+          - generic [ref=e1110]:
+            - heading "数字化转型持续深入，信息化建设再升级" [level=4] [ref=e1111]
+            - paragraph [ref=e1112]: 公司数字信息中心持续推进数字化转型工作，通过金蝶K/3cloud系统优化业务流程，全面提升企业管理效率和服务水平。
+            - link "阅读全文 →" [ref=e1113] [cursor=pointer]:
+              - /url: news-detail.html?id=news-002
+        - generic [ref=e1114]:
+          - generic [ref=e1116]:
+            - generic [ref=e1117]: "10"
+            - generic [ref=e1118]: "2024.01"
+          - generic [ref=e1119]:
+            - heading "荣盛科技参加西南地区实验室设备展览会" [level=4] [ref=e1120]
+            - paragraph [ref=e1121]: 公司携旗下多款核心产品亮相西南地区实验室设备展览会，展示智能实验室一站式解决方案，获得参展客户广泛关注。
+            - link "阅读全文 →" [ref=e1122] [cursor=pointer]:
+              - /url: news-detail.html?id=news-003
+    - generic [ref=e1124]:
+      - generic [ref=e1125]:
+        - heading "联系我们" [level=2] [ref=e1127]
+        - paragraph [ref=e1128]: CONTACT US
+      - generic [ref=e1130]:
+        - generic [ref=e1131]:
+          - heading "联系信息" [level=3] [ref=e1132]
+          - generic [ref=e1133]:
+            - img [ref=e1135]
+            - generic [ref=e1138]:
+              - strong [ref=e1139]: 公司地址
+              - paragraph [ref=e1140]: 四川省绵阳市涪城区一环路西段71号
+          - generic [ref=e1141]:
+            - img [ref=e1143]
+            - generic [ref=e1145]:
+              - strong [ref=e1146]: 服务热线
+              - paragraph [ref=e1147]: 0816-2377966 / 18161019081
+          - generic [ref=e1148]:
+            - img [ref=e1150]
+            - generic [ref=e1153]:
+              - strong [ref=e1154]: 客服经理
+              - paragraph [ref=e1155]: 郭经理 18161019081
+              - img "郭经理"
+          - generic [ref=e1156]:
+            - img [ref=e1158]
+            - generic [ref=e1161]:
+              - strong [ref=e1162]: 企业邮箱
+              - paragraph [ref=e1163]: 361969024@qq.com
+          - generic [ref=e1164]:
+            - img [ref=e1166]
+            - generic [ref=e1168]:
+              - strong [ref=e1169]: 投诉热线
+              - paragraph [ref=e1170]: 冯经理 17364912210（微信同号）
+        - generic [ref=e1171]:
+          - heading "在线咨询" [level=3] [ref=e1172]
+          - generic [ref=e1173]:
+            - generic [ref=e1174]:
+              - generic [ref=e1175]:
+                - generic [ref=e1176]: 姓名 *
+                - textbox "姓名 *" [ref=e1177]:
+                  - /placeholder: 请输入您的姓名
+              - generic [ref=e1178]:
+                - generic [ref=e1179]: 电话 *
+                - textbox "电话 *" [ref=e1180]:
+                  - /placeholder: 请输入您的手机号
+            - generic [ref=e1181]:
+              - generic [ref=e1182]: 邮箱
+              - textbox "邮箱" [ref=e1183]:
+                - /placeholder: 请输入您的邮箱
+            - generic [ref=e1184]:
+              - generic [ref=e1185]: 咨询内容 *
+              - textbox "咨询内容 *" [ref=e1186]:
+                - /placeholder: 请输入您的咨询内容
+            - button "提交咨询" [ref=e1187] [cursor=pointer]
+  - contentinfo [ref=e1188]:
+    - generic [ref=e1191]:
+      - generic [ref=e1192]:
+        - generic [ref=e1193]:
+          - img "荣盛科技" [ref=e1194]
+          - generic [ref=e1195]: 荣盛科技
+        - paragraph [ref=e1196]: 服务更专业，客户更省心。智能实验室一站式方案解决专家，助力中国科研事业发展。公司秉承"诚信为本、创新为魂"的企业文化，致力于为客户提供最优质的实验室整体解决方案。
+        - generic [ref=e1197]:
+          - link "微信" [ref=e1198] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1199]
+          - link "QQ" [ref=e1202] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1203]
+          - link "微博" [ref=e1205] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e1206]
+      - generic [ref=e1208]:
+        - heading "快速导航" [level=4] [ref=e1209]
+        - list [ref=e1210]:
+          - listitem [ref=e1211]:
+            - link "在线商城 ↗" [ref=e1212] [cursor=pointer]:
+              - /url: https://sc.myrshx.com/ShopPC/#/
+          - listitem [ref=e1213]:
+            - link "关于我们" [ref=e1214] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e1215]:
+            - link "产品服务" [ref=e1216] [cursor=pointer]:
+              - /url: business.html
+          - listitem [ref=e1217]:
+            - link "产品展厅" [ref=e1218] [cursor=pointer]:
+              - /url: showroom.html
+          - listitem [ref=e1219]:
+            - link "企业文化" [ref=e1220] [cursor=pointer]:
+              - /url: culture.html
+          - listitem [ref=e1221]:
+            - link "解决方案" [ref=e1222] [cursor=pointer]:
+              - /url: solutions.html
+          - listitem [ref=e1223]:
+            - link "新闻中心" [ref=e1224] [cursor=pointer]:
+              - /url: news.html
+          - listitem [ref=e1225]:
+            - link "联系我们" [ref=e1226] [cursor=pointer]:
+              - /url: "#contact"
+      - generic [ref=e1227]:
+        - heading "产品中心" [level=4] [ref=e1228]
+        - list [ref=e1229]:
+          - listitem [ref=e1230]:
+            - link "化验室·净化室装修" [ref=e1231] [cursor=pointer]:
+              - /url: business.html
+          - listitem [ref=e1232]:
+            - link "试剂耗材销售" [ref=e1233] [cursor=pointer]:
+              - /url: business.html
+          - listitem [ref=e1234]:
+            - link "危化品仓储·运输" [ref=e1235] [cursor=pointer]:
+              - /url: logistics.html
+          - listitem [ref=e1236]:
+            - link "实验室仪器设备" [ref=e1237] [cursor=pointer]:
+              - /url: business.html
+          - listitem [ref=e1238]:
+            - link "化工原料销售" [ref=e1239] [cursor=pointer]:
+              - /url: business.html
+      - generic [ref=e1240]:
+        - heading "联系方式" [level=4] [ref=e1241]
+        - generic [ref=e1242]:
+          - img [ref=e1243]
+          - generic [ref=e1246]: 四川省绵阳市涪城区一环路西段71号
+        - generic [ref=e1247]:
+          - img [ref=e1248]
+          - generic [ref=e1250]: 0816-2377966 / 18161019081
+        - generic [ref=e1251]:
+          - img [ref=e1252]
+          - generic [ref=e1255]: 361969024@qq.com
+        - generic [ref=e1256]:
+          - img [ref=e1257]
+          - generic [ref=e1260]: 郭经理 18161019081
+        - generic [ref=e1261]:
+          - generic [ref=e1262]:
+            - img "荣盛微信公众号" [ref=e1264]
+            - generic [ref=e1265]: 荣盛微信公众号
+          - generic [ref=e1266]:
+            - img "荣盛手机商城" [ref=e1268]
+            - generic [ref=e1269]: 荣盛手机商城
+    - paragraph [ref=e1272]:
+      - text: © 2024 绵阳市荣盛科技有限公司 版权所有
+      - link "蜀ICP备10022305号-2" [ref=e1273] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn/

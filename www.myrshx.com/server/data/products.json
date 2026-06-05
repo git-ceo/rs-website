@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "product-1",
+      "title": "化验室·净化室装修工程",
+      "description": "提供从规划设计、生产施工到安装售后的一站式实验室整体解决方案，产品安全、人性化、功能化，已达同行业一流水平。",
+      "image": "images/pdf_img_39_4.jpeg",
+      "features": ["实验室整体规划设计", "通风柜与试验台配套", "净化室洁净工程", "专业工程团队保障"],
+      "icon": "building"
+    },
+    {
+      "id": "product-2",
+      "title": "试剂耗材销售",
+      "description": "覆盖分析纯、优级纯等各级别化学试剂，常备单品4000余种，库存货物达300余万元，迅速满足客户多样化需求。",
+      "image": "images/pdf_img_43_4.jpeg",
+      "features": ["国药、阿拉丁、麦克林等国产", "赛默飞、TCI、Sigma等进口", "标准物质与稳定同位素", "4000+常备单品"],
+      "icon": "flask"
+    },
+    {
+      "id": "product-3",
+      "title": "危化品仓储·运输服务",
+      "description": "绵阳唯一具备危险化学品、易制毒、易制爆化学品经营兼存储许可的服务商，近3000平米现代化仓库，覆盖川北及周边区域。",
+      "image": "images/pdf_img_45_4.jpeg",
+      "features": ["三证齐全资质保障", "3000㎡现代化仓库", "4辆专用配送车辆", "覆盖川北10+区县"],
+      "icon": "truck"
+    },
+    {
+      "id": "product-4",
+      "title": "实验室仪器设备",
+      "description": "代理国内外知名品牌实验室仪器设备，涵盖水质分析、通用仪器、分析仪器、专业设备，应用于科研、教育、生产制造等领域。",
+      "image": "images/pdf_img_41_4.jpeg",
+      "features": ["一恒、雷磁、连华等国产精品", "Mettler、Eppendorf等进口高端", "分光光度计/色谱/天平等", "完善的售后维修服务"],
+      "icon": "microscope"
+    },
+    {
+      "id": "product-5",
+      "title": "化工原料销售",
+      "description": "常备工业盐酸、硫酸、甲醇、聚氯化铝等多种化工原料，主推科研斯达污水聚氯化铝品牌，质量稳定可靠，满足工业生产及科研需求。",
+      "image": "images/pdf_img_40_4.jpeg",
+      "features": ["工业级酸碱原料", "污水处理专用试剂", "长期稳定供货", "质量三包保障"],
+      "icon": "chemical"
+    }
+  ],
+  "brands": {
+    "categories": [
+      {
+        "name": "国产试剂",
+        "brands": ["国药(沪试)", "阿拉丁", "麦克林", "毕得", "坛墨", "SCR", "沃凯"]
+      },
+      {
+        "name": "进口试剂",
+        "brands": ["ThermoFisher", "Alfa Aesar", "TCI", "Sigma-Aldrich", "Polymer Source", "J&K"]
+      },
+      {
+        "name": "仪器设备",
+        "brands": ["上海一恒", "上海仪电分析", "雷磁", "成都连华", "METTLER TOLEDO", "Eppendorf", "合肥科晶"]
+      },
+      {
+        "name": "玻璃耗材",
+        "brands": ["天津天科", "蜀玻/蜀牛", "Synthware", "科研斯达", "Asone", "上海众御"]
+      },
+      {
+        "name": "其他品牌",
+        "brands": ["3M", "Hellma", "Liebherr", "Merck Millipore", "Triskem"]
+      }
+    ]
+  }
+}

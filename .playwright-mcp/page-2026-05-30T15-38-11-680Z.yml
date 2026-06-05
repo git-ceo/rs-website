@@ -1,0 +1,529 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link:
+        - /url: "#"
+      - generic [ref=e8]:
+        - text: 您好，欢迎光临绵阳荣盛商城！
+        - generic [ref=e9]: "[登录]"
+      - generic [ref=e10]: 会员中心 | 收藏夹 | 我的足迹 | 我的订单 | 联系电话：0816-2377966
+    - generic [ref=e12]:
+      - generic [ref=e15]:
+        - textbox "请输入产品名称 品牌 CAS号 厂家货号" [ref=e16]
+        - button "搜索" [ref=e17] [cursor=pointer]
+      - term [ref=e20] [cursor=pointer]:
+        - paragraph [ref=e21]:
+          - text: 购物车
+          - generic [ref=e22]: "0"
+    - generic [ref=e24]:
+      - generic:
+        - generic [ref=e26] [cursor=pointer]: 商城首页
+        - generic [ref=e28] [cursor=pointer]: 热销推荐
+        - generic [ref=e30] [cursor=pointer]: 精品推荐
+        - generic [ref=e32] [cursor=pointer]: 公司简介
+        - generic [ref=e34] [cursor=pointer]: 联系我们
+        - generic [ref=e36] [cursor=pointer]: 帮助中心
+        - generic [ref=e38] [cursor=pointer]: 品牌中心
+  - list [ref=e40]:
+    - generic [ref=e41] [cursor=pointer]:
+      - generic [ref=e50]:
+        - paragraph [ref=e52]
+        - paragraph [ref=e54]
+        - paragraph [ref=e56]
+        - paragraph [ref=e58]
+      - list [ref=e59]
+  - generic [ref=e62]:
+    - term [ref=e66]: 分类专区
+    - generic [ref=e68]:
+      - list [ref=e71]:
+        - listitem [ref=e72]:
+          - generic [ref=e74] [cursor=pointer]:
+            - generic "新版分类" [ref=e76]: 化学试剂
+            - generic "新版分类" [ref=e78]: 化学试剂
+        - listitem [ref=e79]:
+          - generic [ref=e81] [cursor=pointer]:
+            - generic "新版分类" [ref=e83]: 化工原料
+            - generic "新版分类" [ref=e85]: 化工原料
+        - listitem [ref=e86]:
+          - generic [ref=e88] [cursor=pointer]:
+            - generic "新版分类" [ref=e90]: 化学安全
+            - generic "新版分类" [ref=e92]: 化学安全
+        - listitem [ref=e93]:
+          - generic [ref=e95] [cursor=pointer]:
+            - generic "新版分类" [ref=e97]: 化学溶剂
+            - generic "新版分类" [ref=e99]: 化学溶剂
+      - list [ref=e102]:
+        - listitem [ref=e103]:
+          - generic [ref=e105] [cursor=pointer]:
+            - generic "新版分类" [ref=e107]: 通用耗材
+            - generic "新版分类" [ref=e109]: 通用耗材
+        - listitem [ref=e110]:
+          - generic [ref=e112] [cursor=pointer]:
+            - generic "新版分类" [ref=e114]: 生物耗材
+            - generic "新版分类" [ref=e116]: 生物耗材
+        - listitem [ref=e117]:
+          - generic [ref=e119] [cursor=pointer]:
+            - generic "新版分类" [ref=e121]: 清洁耗材
+            - generic "新版分类" [ref=e123]: 清洁耗材
+        - listitem [ref=e124]:
+          - generic [ref=e126] [cursor=pointer]:
+            - generic "新版分类" [ref=e128]: 色谱耗材
+            - generic "新版分类" [ref=e130]: 色谱耗材
+    - generic [ref=e132]:
+      - list [ref=e135]:
+        - listitem [ref=e136]:
+          - generic [ref=e138] [cursor=pointer]:
+            - generic "新版分类" [ref=e140]: 头部防护
+            - generic "新版分类" [ref=e142]: 头部防护
+        - listitem [ref=e143]:
+          - generic [ref=e145] [cursor=pointer]:
+            - generic "新版分类" [ref=e147]: 面部防护
+            - generic "新版分类" [ref=e149]: 面部防护
+        - listitem [ref=e150]:
+          - generic [ref=e152] [cursor=pointer]:
+            - generic "新版分类" [ref=e154]: 听力防护
+            - generic "新版分类" [ref=e156]: 听力防护
+        - listitem [ref=e157]:
+          - generic [ref=e159] [cursor=pointer]:
+            - generic "新版分类" [ref=e161]: 呼吸防护
+            - generic "新版分类" [ref=e163]: 呼吸防护
+      - list [ref=e166]:
+        - listitem [ref=e167]:
+          - generic [ref=e169] [cursor=pointer]:
+            - generic "新版分类" [ref=e171]: 通用仪器
+            - generic "新版分类" [ref=e173]: 通用仪器
+        - listitem [ref=e174]:
+          - generic [ref=e176] [cursor=pointer]:
+            - generic "新版分类" [ref=e178]: 分析仪器
+            - generic "新版分类" [ref=e180]: 分析仪器
+        - listitem [ref=e181]:
+          - generic [ref=e183] [cursor=pointer]:
+            - generic "新版分类" [ref=e185]: 环境监测
+            - generic "新版分类" [ref=e187]: 环境监测
+        - listitem [ref=e188]:
+          - generic [ref=e190] [cursor=pointer]:
+            - generic "新版分类" [ref=e192]: 生命科学
+            - generic "新版分类" [ref=e194]: 生命科学
+    - generic [ref=e196]:
+      - list [ref=e199]:
+        - listitem [ref=e200]:
+          - generic [ref=e202] [cursor=pointer]:
+            - generic "新版分类" [ref=e204]: 实验台柜
+            - generic "新版分类" [ref=e206]: 实验台柜
+        - listitem [ref=e207]:
+          - generic [ref=e209] [cursor=pointer]:
+            - generic "新版分类" [ref=e211]: 通风设备
+            - generic "新版分类" [ref=e213]: 通风设备
+        - listitem [ref=e214]:
+          - generic [ref=e216] [cursor=pointer]:
+            - generic "新版分类" [ref=e218]: 气路系统
+            - generic "新版分类" [ref=e220]: 气路系统
+        - listitem [ref=e221]:
+          - generic [ref=e223] [cursor=pointer]:
+            - generic "新版分类" [ref=e225]: 实验用品
+            - generic "新版分类" [ref=e227]: 实验用品
+      - list [ref=e230]:
+        - listitem [ref=e231]:
+          - generic [ref=e233] [cursor=pointer]:
+            - generic "新版分类" [ref=e235]: 机电工具
+            - generic "新版分类" [ref=e237]: 机电工具
+        - listitem [ref=e238]:
+          - generic [ref=e240] [cursor=pointer]:
+            - generic "新版分类" [ref=e242]: 五金刀具
+            - generic "新版分类" [ref=e244]: 五金刀具
+        - listitem [ref=e245]:
+          - generic [ref=e247] [cursor=pointer]:
+            - generic "新版分类" [ref=e249]: 紧固密封
+            - generic "新版分类" [ref=e251]: 紧固密封
+        - listitem [ref=e252]:
+          - generic [ref=e254] [cursor=pointer]:
+            - generic "新版分类" [ref=e256]: 五金工具
+            - generic "新版分类" [ref=e258]: 五金工具
+  - generic [ref=e260]:
+    - generic [ref=e261]: 合作品牌专区
+    - generic [ref=e262]:
+      - listitem [ref=e263]:
+        - generic "科研斯达." [ref=e264] [cursor=pointer]:
+          - img "科研斯达." [ref=e266]
+      - listitem [ref=e267]:
+        - generic "阿拉丁/aladdin" [ref=e268] [cursor=pointer]:
+          - img "阿拉丁/aladdin" [ref=e270]
+      - listitem [ref=e271]:
+        - generic "亚速旺/Asone" [ref=e272] [cursor=pointer]:
+          - img "亚速旺/Asone" [ref=e274]
+      - listitem [ref=e275]:
+        - generic "毕得医药/Bidepharm" [ref=e276] [cursor=pointer]:
+          - img "毕得医药/Bidepharm" [ref=e278]
+      - listitem [ref=e279]:
+        - generic "J&K" [ref=e280] [cursor=pointer]:
+          - img "J&K" [ref=e282]
+      - listitem [ref=e283]:
+        - generic "连华" [ref=e284] [cursor=pointer]:
+          - img "连华" [ref=e286]
+      - listitem [ref=e287]:
+        - generic "3M" [ref=e288] [cursor=pointer]:
+          - img "3M" [ref=e290]
+      - listitem [ref=e291]:
+        - generic "大龙/Dragon" [ref=e292] [cursor=pointer]:
+          - img "大龙/Dragon" [ref=e294]
+      - listitem [ref=e295]:
+        - generic "安捷伦/Agilent" [ref=e296] [cursor=pointer]:
+          - img "安捷伦/Agilent" [ref=e298]
+      - listitem [ref=e299]:
+        - generic "一恒" [ref=e300] [cursor=pointer]:
+          - img "一恒" [ref=e302]
+      - listitem [ref=e303]:
+        - generic "众御" [ref=e304] [cursor=pointer]:
+          - img "众御" [ref=e306]
+      - listitem [ref=e307]:
+        - generic "科试/KESHI" [ref=e308] [cursor=pointer]:
+          - img "科试/KESHI" [ref=e310]
+      - listitem [ref=e311]:
+        - generic "天玻" [ref=e312] [cursor=pointer]:
+          - img "天玻" [ref=e314]
+      - listitem [ref=e315]:
+        - generic "泰斯特" [ref=e316] [cursor=pointer]:
+          - img "泰斯特" [ref=e318]
+      - listitem [ref=e319]:
+        - generic "科密欧/KMO" [ref=e320] [cursor=pointer]:
+          - img "科密欧/KMO" [ref=e322]
+      - listitem [ref=e323]:
+        - generic "海尔/Haier" [ref=e324] [cursor=pointer]:
+          - img "海尔/Haier" [ref=e326]
+      - listitem [ref=e327]:
+        - generic "环凯/HKM" [ref=e328] [cursor=pointer]:
+          - img "环凯/HKM" [ref=e330]
+      - listitem [ref=e331]:
+        - generic "艾卡/IKA" [ref=e332] [cursor=pointer]:
+          - img "艾卡/IKA" [ref=e334]
+      - listitem [ref=e335]:
+        - generic "豫华明" [ref=e336] [cursor=pointer]:
+          - img "豫华明" [ref=e338]
+      - listitem [ref=e339]:
+        - generic "奥博星/AOBOX" [ref=e340] [cursor=pointer]:
+          - img "奥博星/AOBOX" [ref=e342]
+      - listitem [ref=e343]:
+        - generic "皎洁/JIAOJIE" [ref=e344] [cursor=pointer]:
+          - img "皎洁/JIAOJIE" [ref=e346]
+      - listitem [ref=e347]:
+        - generic "龙腾电子/LONGTENG" [ref=e348] [cursor=pointer]:
+          - img "龙腾电子/LONGTENG" [ref=e350]
+      - listitem [ref=e351]:
+        - generic "洁盟" [ref=e352] [cursor=pointer]:
+          - img "洁盟" [ref=e354]
+      - listitem [ref=e355]:
+        - generic "诺尔施" [ref=e356] [cursor=pointer]:
+          - img "诺尔施" [ref=e358]
+  - generic [ref=e359]:
+    - generic [ref=e362]:
+      - term [ref=e363]: 热销推荐
+      - definition [ref=e364]:
+        - generic [ref=e365]:
+          - link "柄皿" [ref=e367] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e368]:
+            - generic "科研斯达." [ref=e370]: "品牌: 科研斯达."
+            - generic "500ml" [ref=e371]: "型号: 500ml"
+          - paragraph [ref=e372]: 登录后查看￥***
+        - generic [ref=e373]:
+          - link "塑料离心管" [ref=e375] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e376]:
+            - generic "科研斯达." [ref=e378]: "品牌: 科研斯达."
+            - generic "5ml,按盖圆底,300个/包" [ref=e379]: "型号: 5ml,按盖圆底,300个/包"
+          - paragraph [ref=e380]: 登录后查看￥***
+        - generic [ref=e381]:
+          - link "塑料大口瓶" [ref=e383] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e384]:
+            - generic "科研斯达." [ref=e386]: "品牌: 科研斯达."
+            - generic "2000ml，HDPE" [ref=e387]: "型号: 2000ml，HDPE"
+          - paragraph [ref=e388]: 登录后查看￥***
+        - generic [ref=e389]:
+          - link "表皿" [ref=e391] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e392]:
+            - generic "科研斯达." [ref=e394]: "品牌: 科研斯达."
+            - generic "150mm,10个/盒" [ref=e395]: "型号: 150mm,10个/盒"
+          - paragraph [ref=e396]: 登录后查看￥***
+        - generic [ref=e397]:
+          - link "橡胶塞" [ref=e399] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e400]:
+            - generic "科研斯达." [ref=e402]: "品牌: 科研斯达."
+            - generic "16#,87*74*高42mm,1个/包" [ref=e403]: "型号: 16#,87*74*高42mm,1个/包"
+          - paragraph [ref=e404]: 登录后查看￥***
+        - generic [ref=e405]:
+          - link "比色管架" [ref=e407] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e408]:
+            - generic "科研斯达." [ref=e410]: "品牌: 科研斯达."
+            - generic "50ml12孔,木制" [ref=e411]: "型号: 50ml12孔,木制"
+          - paragraph [ref=e412]: 登录后查看￥***
+        - generic [ref=e413]:
+          - link "聚四氟乙烯三角瓶" [ref=e415] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e416]:
+            - generic "科研斯达." [ref=e418]: "品牌: 科研斯达."
+            - generic "100ml" [ref=e419]: "型号: 100ml"
+          - paragraph [ref=e420]: 登录后查看￥***
+        - generic [ref=e421]:
+          - link "比色管架" [ref=e423] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e424]:
+            - generic "科研斯达." [ref=e426]: "品牌: 科研斯达."
+            - generic "25ml6孔,木制" [ref=e427]: "型号: 25ml6孔,木制"
+          - paragraph [ref=e428]: 登录后查看￥***
+        - generic [ref=e429]:
+          - link "塑料洗瓶" [ref=e431] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e432]:
+            - generic "科研斯达." [ref=e434]: "品牌: 科研斯达."
+            - generic "250ml,2个/包" [ref=e435]: "型号: 250ml,2个/包"
+          - paragraph [ref=e436]: 登录后查看￥***
+        - generic [ref=e437]:
+          - link "聚四氟乙烯离心管(圆底)" [ref=e439] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e440]:
+            - generic "科研斯达." [ref=e442]: "品牌: 科研斯达."
+            - generic "10ml" [ref=e443]: "型号: 10ml"
+          - paragraph [ref=e444]: 登录后查看￥***
+        - generic [ref=e445]:
+          - link "比色管架" [ref=e447] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e448]:
+            - generic "科研斯达." [ref=e450]: "品牌: 科研斯达."
+            - generic "50ml6孔,木制" [ref=e451]: "型号: 50ml6孔,木制"
+          - paragraph [ref=e452]: 登录后查看￥***
+        - generic [ref=e453]:
+          - link "柄皿" [ref=e455] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e456]:
+            - generic "科研斯达." [ref=e458]: "品牌: 科研斯达."
+            - generic "100ml" [ref=e459]: "型号: 100ml"
+          - paragraph [ref=e460]: 登录后查看￥***
+        - generic [ref=e461]:
+          - link "比色皿" [ref=e463] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e464]:
+            - generic "科研斯达." [ref=e466]: "品牌: 科研斯达."
+            - generic "10mm,751" [ref=e467]: "型号: 10mm,751"
+          - paragraph [ref=e468]: 登录后查看￥***
+        - generic [ref=e469]:
+          - link "塑料离心管" [ref=e471] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e472]:
+            - generic "科研斯达." [ref=e474]: "品牌: 科研斯达."
+            - generic "100ml,螺纹盖圆底,30个/包" [ref=e475]: "型号: 100ml,螺纹盖圆底,30个/包"
+          - paragraph [ref=e476]: 登录后查看￥***
+        - generic [ref=e477]:
+          - link "聚四氟乙烯量筒" [ref=e479] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e480]:
+            - generic "科研斯达." [ref=e482]: "品牌: 科研斯达."
+            - generic "50ml" [ref=e483]: "型号: 50ml"
+          - paragraph [ref=e484]: 登录后查看￥***
+    - generic [ref=e487]:
+      - term [ref=e488]: 精品推荐
+      - definition [ref=e489]:
+        - generic [ref=e490]:
+          - link "橡胶塞" [ref=e492] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e493]:
+            - generic "科研斯达." [ref=e495]: "品牌: 科研斯达."
+            - generic "3#,24*17*高26mm,10个/包" [ref=e496]: "型号: 3#,24*17*高26mm,10个/包"
+          - paragraph [ref=e497]: 登录后查看￥***
+        - generic [ref=e498]:
+          - link "塑料离心管" [ref=e500] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e501]:
+            - generic "科研斯达." [ref=e503]: "品牌: 科研斯达."
+            - generic "10ml,按盖圆底,200个/包" [ref=e504]: "型号: 10ml,按盖圆底,200个/包"
+          - paragraph [ref=e505]: 登录后查看￥***
+        - generic [ref=e506]:
+          - link "不锈钢微量药勺" [ref=e508] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e509]:
+            - generic "科研斯达." [ref=e511]: "品牌: 科研斯达."
+            - generic "220mm，一勺一铲，杆径:3mm，铲头:长*宽32*6.5mm，勺头:长*宽9.5*6.5mm" [ref=e512]: "型号: 220mm，一勺一铲，杆径:3mm，铲头:长*宽32*6.5mm，勺头:长*宽9.5*6.5mm"
+          - paragraph [ref=e513]: 登录后查看￥***
+        - generic [ref=e514]:
+          - link "聚四氟乙烯实心塞" [ref=e516] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e517]:
+            - generic "科研斯达." [ref=e519]: "品牌: 科研斯达."
+            - generic "19#" [ref=e520]: "型号: 19#"
+          - paragraph [ref=e521]: 登录后查看￥***
+        - generic [ref=e522]:
+          - link "聚四氟乙烯大口瓶" [ref=e524] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e525]:
+            - generic "科研斯达." [ref=e527]: "品牌: 科研斯达."
+            - generic "500ml" [ref=e528]: "型号: 500ml"
+          - paragraph [ref=e529]: 登录后查看￥***
+        - generic [ref=e530]:
+          - link "塑料漏斗" [ref=e532] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e533]:
+            - generic "科研斯达." [ref=e535]: "品牌: 科研斯达."
+            - generic "100mm" [ref=e536]: "型号: 100mm"
+          - paragraph [ref=e537]: 登录后查看￥***
+        - generic [ref=e538]:
+          - link "塑料量筒" [ref=e540] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e541]:
+            - generic "科研斯达." [ref=e543]: "品牌: 科研斯达."
+            - generic "1000ml" [ref=e544]: "型号: 1000ml"
+          - paragraph [ref=e545]: 登录后查看￥***
+        - generic [ref=e546]:
+          - link "烧杯" [ref=e548] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e549]:
+            - generic "科研斯达." [ref=e551]: "品牌: 科研斯达."
+            - generic "100ml,10个/盒,200个/箱" [ref=e552]: "型号: 100ml,10个/盒,200个/箱"
+          - paragraph [ref=e553]: 登录后查看￥***
+        - generic [ref=e554]:
+          - link "聚四氟乙烯三角瓶" [ref=e556] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e557]:
+            - generic "科研斯达." [ref=e559]: "品牌: 科研斯达."
+            - generic "250ml" [ref=e560]: "型号: 250ml"
+          - paragraph [ref=e561]: 登录后查看￥***
+        - generic [ref=e562]:
+          - link "聚四氟乙烯量筒" [ref=e564] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e565]:
+            - generic "科研斯达." [ref=e567]: "品牌: 科研斯达."
+            - generic "25ml" [ref=e568]: "型号: 25ml"
+          - paragraph [ref=e569]: 登录后查看￥***
+        - generic [ref=e570]:
+          - link "柄皿" [ref=e572] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e573]:
+            - generic "科研斯达." [ref=e575]: "品牌: 科研斯达."
+            - generic "250ml" [ref=e576]: "型号: 250ml"
+          - paragraph [ref=e577]: 登录后查看￥***
+        - generic [ref=e578]:
+          - link "烧杯" [ref=e580] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e581]:
+            - generic "科研斯达." [ref=e583]: "品牌: 科研斯达."
+            - generic "500ml,8个/盒,72个/箱" [ref=e584]: "型号: 500ml,8个/盒,72个/箱"
+          - paragraph [ref=e585]: 登录后查看￥***
+        - generic [ref=e586]:
+          - link "塑料小口瓶" [ref=e588] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e589]:
+            - generic "科研斯达." [ref=e591]: "品牌: 科研斯达."
+            - generic "60ml,5个/包，HDPE" [ref=e592]: "型号: 60ml,5个/包，HDPE"
+          - paragraph [ref=e593]: 登录后查看￥***
+        - generic [ref=e594]:
+          - link "聚四氟乙烯实心塞" [ref=e596] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e597]:
+            - generic "科研斯达." [ref=e599]: "品牌: 科研斯达."
+            - generic "29#" [ref=e600]: "型号: 29#"
+          - paragraph [ref=e601]: 登录后查看￥***
+        - generic [ref=e602]:
+          - link "塑料洗瓶" [ref=e604] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e605]:
+            - generic "科研斯达." [ref=e607]: "品牌: 科研斯达."
+            - generic "500ml,2个/包" [ref=e608]: "型号: 500ml,2个/包"
+          - paragraph [ref=e609]: 登录后查看￥***
+  - list [ref=e611]:
+    - listitem [ref=e612]:
+      - generic [ref=e613] [cursor=pointer]: 主页
+    - listitem [ref=e614]:
+      - generic [ref=e615] [cursor=pointer]: 购物车
+    - listitem [ref=e616]:
+      - generic [ref=e617] [cursor=pointer]: 收藏
+    - listitem [ref=e618]:
+      - generic [ref=e619] [cursor=pointer]: 微信
+    - listitem [ref=e620]:
+      - generic [ref=e621] [cursor=pointer]: 客服
+    - generic [ref=e721]:
+      - generic [ref=e722]:
+        - generic [ref=e723]: ⋮⋮
+        - generic [ref=e724]: 在线客服
+        - generic [ref=e725] [cursor=pointer]: X
+      - generic [ref=e726]:
+        - generic [ref=e729]:
+          - img [ref=e731]
+          - paragraph [ref=e748]: 暂无聊天记录，开始聊天吧
+        - generic [ref=e749]:
+          - generic [ref=e750]:
+            - button [ref=e752] [cursor=pointer]:
+              - button "发送图片" [ref=e753]:
+                - img [ref=e755]
+            - button "截图或粘贴" [ref=e758] [cursor=pointer]:
+              - img [ref=e760]
+          - textbox "输入消息... (支持Ctrl+V粘贴图片)" [active] [ref=e764]
+          - button "发送 (Ctrl+Enter)" [ref=e766] [cursor=pointer]:
+            - generic [ref=e767]: 发送 (Ctrl+Enter)
+    - listitem [ref=e622]:
+      - generic [ref=e623] [cursor=pointer]: 回到顶部
+  - contentinfo [ref=e624]:
+    - generic [ref=e626]:
+      - term [ref=e628]: 正品保证
+      - term [ref=e630]: 优质实惠
+      - term [ref=e632]: 品类丰富
+      - term [ref=e634]: 诚信服务
+      - term [ref=e636]: 专属客服
+    - generic [ref=e638]:
+      - generic [ref=e640]:
+        - list:
+          - generic:
+            - generic:
+              - generic [ref=e641]:
+                - term [ref=e642]: 新手上路
+                - definition [ref=e643]:
+                  - link "会员折扣" [ref=e644] [cursor=pointer]:
+                    - /url: "#"
+                  - link "帮助中心" [ref=e645] [cursor=pointer]:
+                    - /url: "#"
+              - generic [ref=e646]:
+                - term [ref=e647]: 支付配送
+                - definition
+              - generic [ref=e648]:
+                - term [ref=e649]: 售后服务
+                - definition
+              - generic [ref=e650]:
+                - term [ref=e651]: 购物指南
+                - definition [ref=e652]:
+                  - link "免责条款" [ref=e653] [cursor=pointer]:
+                    - /url: "#"
+                  - link "使用条款" [ref=e654] [cursor=pointer]:
+                    - /url: "#"
+                  - link "购物流程" [ref=e655] [cursor=pointer]:
+                    - /url: "#"
+              - generic [ref=e656]:
+                - term [ref=e657]: 购物条款
+                - definition [ref=e658]:
+                  - link "隐私条款" [ref=e659] [cursor=pointer]:
+                    - /url: "#"
+                  - link "服务条款" [ref=e660] [cursor=pointer]:
+                    - /url: "#"
+      - generic [ref=e661]:
+        - paragraph [ref=e662]:
+          - text: 工作时间：周一至周六 8:20－17:30|
+          - link "联系我们" [ref=e663] [cursor=pointer]:
+            - /url: "#"
+          - text: "|"
+          - link "公司简介" [ref=e664] [cursor=pointer]:
+            - /url: "#"
+          - text: "|维权热线：12315|经营证照|营业执照|增值电信业务经营许可证"
+        - generic [ref=e666]:
+          - paragraph [ref=e667]:
+            - link "蜀ICP备10022305号-2 Copyright © 2022 - 2026 Corporation All Rights Reserved 绵阳市荣盛科技有限公司" [ref=e668] [cursor=pointer]:
+              - /url: http://beian.miit.gov.cn
+          - paragraph
+        - paragraph [ref=e669]:
+          - link [ref=e670] [cursor=pointer]:
+            - /url: https://www.12377.cn/
+          - link [ref=e671] [cursor=pointer]:
+            - /url: https://scjgj.sc.gov.cn/scjgj/index.shtml
+          - link [ref=e672] [cursor=pointer]:
+            - /url: http://cyberpolice.mps.gov.cn/
+          - link [ref=e673] [cursor=pointer]:
+            - /url: https://beian.mps.gov.cn/#/

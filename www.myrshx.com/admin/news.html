@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>新闻管理 · 荣盛科技后台</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23004182'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'>荣</text></svg>">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <main class="main">
+            <header class="page-head">
+                <div>
+                    <div class="page-eyebrow"><span class="num">/ 02</span><span>NEWS · CONTENT</span></div>
+                    <h1 class="page-title">新闻管理</h1>
+                    <p class="page-subtitle">发布、编辑和管理网站新闻动态</p>
+                </div>
+                <button class="btn btn-primary" id="btn-new-news">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    发布新闻
+                </button>
+            </header>
+
+            <div class="tbl-wrap">
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th class="col-num">№</th>
+                            <th>标题 / Title</th>
+                            <th>日期</th>
+                            <th>更新时间</th>
+                            <th class="col-actions">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="news-tbody">
+                        <tr><td colspan="5" class="empty"><span class="loading dark"></span>&nbsp;加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <!-- 新闻编辑弹窗 -->
+    <div class="modal" id="news-modal">
+        <div class="modal-mask"></div>
+        <div class="modal-body lg">
+            <div class="modal-head">
+                <div class="t">
+                    <span class="eyebrow">NEWS · EDITOR</span>
+                    <span id="news-modal-title">发布新闻</span>
+                </div>
+                <button class="modal-close" onclick="closeModal('news-modal')">×</button>
+            </div>
+            <form id="news-form">
+                <div class="modal-content">
+                    <input type="hidden" id="news-id">
+                    <input type="hidden" id="news-image">
+
+                    <div class="form-grid">
+                        <div class="field full">
+                            <label><span>标题 *</span><span class="hint">/ TITLE</span></label>
+                            <input type="text" id="news-title" required maxlength="80" placeholder="请输入新闻标题">
+                        </div>
+
+                        <div class="field">
+                            <label><span>发布日期 *</span><span class="hint">/ DATE</span></label>
+                            <input type="date" id="news-date" required>
+                        </div>
+
+                        <div class="field">
+                            <label><span>封面图</span><span class="hint">/ COVER</span></label>
+                            <div class="upload-box" id="news-upload"></div>
+                        </div>
+
+                        <div class="field full">
+                            <label>
+                                <span>摘要</span>
+                                <span class="hint">/ SUMMARY · <span id="summary-count">0</span>/100</span>
+                            </label>
+                            <textarea id="news-summary" maxlength="100" placeholder="一句话概括新闻要点（最多100字）"></textarea>
+                        </div>
+
+                        <div class="field full">
+                            <label><span>正文 *</span><span class="hint">/ CONTENT · 支持简单 HTML</span></label>
+                            <textarea id="news-content" class="lg" required placeholder="新闻正文内容..."></textarea>
+                            <div class="help">支持 &lt;p&gt;、&lt;br&gt;、&lt;b&gt;、&lt;a&gt; 等基础 HTML 标签</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('news-modal')">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script>
+        if (checkAuth()) {
+            renderSidebar('news');
+            initNewsList();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科创试剂 - 一站式实验室解决方案提供商</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        secondary: '#FF7F24',
+                        light: '#F5F7FA',
+                        dark: '#2C3E50'
+                    },
+                    fontFamily: {
+                        sans: ['思源黑体', 'Arial', 'sans-serif'],
+                        serif: ['思源宋体', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(15, 76, 129, 0.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-light font-sans text-dark">
+    <!-- 导航栏 -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-16 md:h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+                        <i class="fa fa-flask text-white text-xl"></i>
+                    </div>
+                    <span class="text-lg md:text-xl font-bold text-primary">科创试剂</span>
+                </a>
+
+                <!-- 桌面端导航 -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#products" class="hover:text-primary transition-colors">产品中心</a>
+                    <a href="#solutions" class="hover:text-primary transition-colors">解决方案</a>
+                    <a href="#cases" class="hover:text-primary transition-colors">案例展示</a>
+                    <a href="#about" class="hover:text-primary transition-colors">关于我们</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">联系我们</a>
+                </div>
+
+                <!-- 联系按钮 -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-secondary text-white px-5 py-2 rounded-lg hover:bg-secondary/90 transition-colors">
+                        立即咨询
+                    </a>
+                </div>
+
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-dark text-xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="#products" class="block py-2 hover:text-primary transition-colors">产品中心</a>
+                <a href="#solutions" class="block py-2 hover:text-primary transition-colors">解决方案</a>
+                <a href="#cases" class="block py-2 hover:text-primary transition-colors">案例展示</a>
+                <a href="#about" class="block py-2 hover:text-primary transition-colors">关于我们</a>
+                <a href="#contact" class="block py-2 hover:text-primary transition-colors">联系我们</a>
+                <a href="#contact" class="block bg-secondary text-white px-5 py-2 rounded-lg text-center hover:bg-secondary/90 transition-colors">
+                    立即咨询
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 悬浮客服按钮 -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <a href="javascript:void(0)" class="bg-secondary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-secondary/90 transition-all">
+            <i class="fa fa-comments text-xl"></i>
+        </a>
+    </div>
+
+    <!-- 主Banner -->
+    <section class="pt-16 md:pt-20">
+        <div class="relative h-[80vh] min-h-[500px] overflow-hidden">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://picsum.photos/id/180/1920/1080'); filter: brightness(0.7);"></div>
+            <div class="container mx-auto px-4 md:px-6 lg:px-8 relative h-full flex items-center">
+                <div class="max-w-2xl text-white">
+                    <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-shadow mb-4">
+                        一站式实验室解决方案<br>覆盖试剂/耗材/仪器全品类
+                    </h1>
+                    <p class="text-lg md:text-xl text-white/90 mb-8 max-w-xl">
+                        深耕科研配套领域，为高校、药企、检测机构提供专业的实验室建设与物资供应服务
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#products" class="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondary/90 transition-colors text-lg font-medium">
+                            浏览产品
+                        </a>
+                        <a href="#contact" class="bg-white/20 backdrop-blur-sm text-white border border-white/30 px-6 py-3 rounded-lg hover:bg-white/30 transition-colors text-lg font-medium">
+                            定制方案
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section class="py-16 md:py-20">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary mb-4">我们的核心优势</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">专注实验室配套服务15年，以专业品质和高效服务赢得客户信赖</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 优势卡片1 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-cubes text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">品类齐全</h3>
+                    <p class="text-gray-600">万+SKU产品库，覆盖化学试剂、实验室耗材、分析仪器等全品类需求</p>
+                </div>
+
+                <!-- 优势卡片2 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-check-circle text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">原厂正品</h3>
+                    <p class="text-gray-600">与国内外知名品牌深度合作，所有产品均为原厂正品，品质保障</p>
+                </div>
+
+                <!-- 优势卡片3 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-puzzle-piece text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">定制化整装</h3>
+                    <p class="text-gray-600">提供实验室整体规划设计、设备配置、安装调试一站式定制服务</p>
+                </div>
+
+                <!-- 优势卡片4 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fa fa-truck text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">快速配送</h3>
+                    <p class="text-gray-600">全国仓储物流网络，现货产品24小时内发货，满足紧急采购需求</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品中心 -->
+    <section id="products" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary mb-4">产品中心</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">丰富的产品线满足各类实验室需求，为科研工作提供坚实保障</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 产品分类1 -->
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="https://picsum.photos/id/9/600/800" alt="化学试剂" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">化学试剂</h3>
+                        <p class="text-white/80 mb-4">分析纯、优级纯、色谱纯等多级别试剂</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-secondary transition-colors">
+                            查看详情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 产品分类2 -->
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="https://picsum.photos/id/20/600/800" alt="实验室耗材" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">实验室耗材</h3>
+                        <p class="text-white/80 mb-4">玻璃器皿、色谱耗材、样品前处理耗材</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-secondary transition-colors">
+                            查看详情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 产品分类3 -->
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="https://picsum.photos/id/2/600/800" alt="分析仪器" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">分析仪器</h3>
+                        <p class="text-white/80 mb-4">色谱仪、光谱仪、质谱仪等分析设备</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-secondary transition-colors">
+                            查看详情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 产品分类4 -->
+                <div class="relative rounded-xl overflow-hidden group h-64">
+                    <img src="https://picsum.photos/id/42/600/800" alt="实验室整装" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">实验室整装</h3>
+                        <p class="text-white/80 mb-4">实验室规划设计、装修施工、家具配置</p>
+                        <a href="#" class="inline-flex items-center text-white hover:text-secondary transition-colors">
+                            查看详情 <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors">
+                    查看全部产品 <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解决方案 -->
+    <section id="solutions" class="py-16 md:py-20 bg-light">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary mb-4">行业解决方案</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">根据不同行业特点，提供定制化的实验室建设与物资供应方案</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- 解决方案1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5">
+                            <img src="https://picsum.photos/id/28/600/800" alt="高校实验室解决方案" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 md:w-3/5">
+                            <h3 class="text-xl font-bold text-primary mb-3">高校实验室解决方案</h3>
+                            <p class="text-gray-600 mb-4">为高校教学与科研实验室提供全套设备配置、试剂耗材供应及实验室建设服务，满足教学实验、科研创新等多元化需求。</p>
+                            <ul class="text-gray-600 space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>基础化学实验室整体建设</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>科研级分析仪器配置方案</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>教学实验耗材标准化供应</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-block bg-primary/10 text-primary px-5 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 解决方案2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5">
+                            <img src="https://picsum.photos/id/48/600/800" alt="药企研发实验室解决方案" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 md:w-3/5">
+                            <h3 class="text-xl font-bold text-primary mb-3">药企研发实验室解决方案</h3>
+                            <p class="text-gray-600 mb-4">为制药企业提供符合GMP标准的研发实验室建设、分析检测设备配置及试剂耗材供应，助力药物研发与质量控制。</p>
+                            <ul class="text-gray-600 space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>GMP实验室设计与建设</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>药物分析检测仪器配置</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>对照品与试剂标准化管理</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-block bg-primary/10 text-primary px-5 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 解决方案3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5">
+                            <img src="https://picsum.photos/id/36/600/800" alt="第三方检测机构解决方案" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 md:w-3/5">
+                            <h3 class="text-xl font-bold text-primary mb-3">第三方检测机构解决方案</h3>
+                            <p class="text-gray-600 mb-4">为检测机构提供实验室整体规划、高端分析仪器配置及耗材试剂供应链管理，提升检测效率与数据准确性。</p>
+                            <ul class="text-gray-600 space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>检测实验室功能区规划</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>高端分析仪器选型配置</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>耗材试剂库存管理系统</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-block bg-primary/10 text-primary px-5 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 解决方案4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/5">
+                            <img src="https://picsum.photos/id/26/600/800" alt="工业实验室解决方案" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 md:w-3/5">
+                            <h3 class="text-xl font-bold text-primary mb-3">工业实验室解决方案</h3>
+                            <p class="text-gray-600 mb-4">为生产企业提供质控实验室建设、在线监测设备配置及试剂耗材供应，保障产品质量与生产安全。</p>
+                            <ul class="text-gray-600 space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>生产质控实验室建设</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>在线监测分析系统配置</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                    <span>工业试剂安全供应方案</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-block bg-primary/10 text-primary px-5 py-2 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例展示 -->
+    <section id="cases" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary mb-4">成功案例展示</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">为众多知名机构提供专业的实验室建设与物资供应服务，赢得广泛赞誉</p>
+            </div>
+
+            <div class="relative">
+                <div class="overflow-x-auto pb-8">
+                    <div class="flex space-x-6 min-w-max">
+                        <!-- 案例卡片1 -->
+                        <div class="w-80 bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                            <img src="https://picsum.photos/id/24/600/400" alt="某大学生化实验室建设项目" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-sm text-gray-500 mb-2">高校实验室</div>
+                                <h3 class="text-lg font-bold mb-3">某大学生化实验室建设项目</h3>
+                                <p class="text-gray-600 mb-4">为某大学新建的生化实验楼提供整体规划设计、设备配置及试剂耗材供应服务。</p>
+                                <a href="#" class="text-primary hover:text-secondary transition-colors">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- 案例卡片2 -->
+                        <div class="w-80 bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                            <img src="https://picsum.photos/id/29/600/400" alt="某药企研发中心实验室项目" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-sm text-gray-500 mb-2">药企研发</div>
+                                <h3 class="text-lg font-bold mb-3">某药企研发中心实验室项目</h3>
+                                <p class="text-gray-600 mb-4">为某知名药企研发中心建设符合GMP标准的分析实验室，配置高端检测设备。</p>
+                                <a href="#" class="text-primary hover:text-secondary transition-colors">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- 案例卡片3 -->
+                        <div class="w-80 bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                            <img src="https://picsum.photos/id/32/600/400" alt="某检测机构实验室升级项目" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-sm text-gray-500 mb-2">检测机构</div>
+                                <h3 class="text-lg font-bold mb-3">某检测机构实验室升级项目</h3>
+                                <p class="text-gray-600 mb-4">为某第三方检测机构完成实验室功能区改造及高端质谱仪配置，提升检测能力。</p>
+                                <a href="#" class="text-primary hover:text-secondary transition-colors">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- 案例卡片4 -->
+                        <div class="w-80 bg-white rounded-xl overflow-hidden shadow-sm card-hover">
+                            <img src="https://picsum.photos/id/39/600/400" alt="某食品企业质控实验室项目" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <div class="text-sm text-gray-500 mb-2">工业实验室</div>
+                                <h3 class="text-lg font-bold mb-3">某食品企业质控实验室项目</h3>
+                                <p class="text-gray-600 mb-4">为某大型食品企业建设质控实验室，配置食品安全检测设备及试剂耗材供应体系。</p>
+                                <a href="#" class="text-primary hover:text-secondary transition-colors">查看详情 <i class="fa fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 滚动控制按钮 -->
+                <button class="absolute left-0 top-1/2 -translate-y-1/2 -ml-3 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="absolute right-0 top-1/2 -translate-y-1/2 -mr-3 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#" class="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors">
+                    查看全部案例 <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务保障 -->
+    <section class="py-16 md:py-20 bg-primary/5">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-shield text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">正品保障</h4>
+                    <p class="text-sm text-gray-600">原厂直供，品质保证</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-headphones text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">技术支持</h4>
+                    <p class="text-sm text-gray-600">7×16小时专业服务</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">定制方案</h4>
+                    <p class="text-sm text-gray-600">个性化需求解决方案</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-wrench text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">售后上门</h4>
+                    <p class="text-sm text-gray-600">专业工程师现场服务</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-file-text-o text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">发票齐全</h4>
+                    <p class="text-sm text-gray-600">正规发票，资质齐全</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-refresh text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-2">退换无忧</h4>
+                    <p class="text-sm text-gray-600">质量问题无条件退换</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary mb-6">关于科创试剂</h2>
+                    <p class="text-gray-600 mb-4">科创试剂成立于2008年，是国内领先的实验室解决方案提供商，专注于为科研机构、高校、药企及检测机构提供化学试剂、实验室耗材、分析仪器及实验室整装服务。</p>
+                    <p class="text-gray-600 mb-6">公司拥有专业的技术团队和完善的供应链体系，与国内外200余家知名品牌建立战略合作关系，产品涵盖万余种SKU，能够满足不同类型实验室的多样化需求。</p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">15+</h4>
+                            <p class="text-gray-600">行业经验</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">5000+</h4>
+                            <p class="text-gray-600">合作客户</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">10000+</h4>
+                            <p class="text-gray-600">产品SKU</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-primary mb-2">200+</h4>
+                            <p class="text-gray-600">合作品牌</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
+                        了解更多 <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                    <img src="https://picsum.photos/id/42/600/800" alt="公司环境" class="rounded-lg shadow-sm h-full object-cover">
+                    <div class="flex flex-col gap-4">
+                        <img src="https://picsum.photos/id/26/600/400" alt="团队合影" class="rounded-lg shadow-sm h-1/2 object-cover">
+                        <img src="https://picsum.photos/id/28/600/400" alt="实验室实景" class="rounded-lg shadow-sm h-1/2 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 md:py-20 bg-light">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-primary mb-4">联系我们</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">无论您有任何需求或疑问，我们的专业团队随时为您提供支持</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-2 bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-primary mb-6">联系方式</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-map-marker text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">公司地址</h4>
+                                <p class="text-gray-600">北京市海淀区中关村南大街5号</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-phone text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">联系电话</h4>
+                                <p class="text-gray-600">400-888-9999</p>
+                                <p class="text-gray-600">010-88887777</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-envelope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">电子邮箱</h4>
+                                <p class="text-gray-600">service@kcsj.com</p>
+                                <p class="text-gray-600">sales@kcsj.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa fa-clock-o text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">工作时间</h4>
+                                <p class="text-gray-600">周一至周五: 9:00-18:00</p>
+                                <p class="text-gray-600">节假日: 10:00-16:00 (值班)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-3">关注我们</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                <i class="fa fa-weixin"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                <i class="fa fa-weibo"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-primary mb-6">在线留言</h3>
+
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">姓名</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-colors" placeholder="请输入您的姓名">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">电话</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-colors" placeholder="请输入您的联系电话">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">单位名称</label>
+                            <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-colors" placeholder="请输入您的单位名称">
+                        </div>
+
+                        <div>
+                            <label for="need" class="block text-sm font-medium text-gray-700 mb-1">需求类型</label>
+                            <select id="need" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-colors">
+                                <option value="">请选择需求类型</option>
+                                <option value="reagent">化学试剂采购</option>
+                                <option value="consumable">耗材采购</option>
+                                <option value="instrument">仪器采购</option>
+                                <option value="laboratory">实验室整装</option>
+                                <option value="other">其他需求</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">留言内容</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-colors" placeholder="请详细描述您的需求..."></textarea>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input type="checkbox" id="agreement" class="w-4 h-4 text-primary focus:ring-primary/50 border-gray-300 rounded">
+                            <label for="agreement" class="ml-2 text-sm text-gray-600">我同意贵公司根据隐私政策处理我的个人信息</label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-secondary text-white py-3 rounded-lg hover:bg-secondary/90 transition-colors font-medium">
+                            提交留言
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center">
+                            <i class="fa fa-flask text-primary text-xl"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">科创试剂</span>
+                    </div>
+                    <p class="text-white/80 mb-6">一站式实验室解决方案提供商，为科研工作提供专业支持与服务</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fa fa-weixin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">产品中心</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">化学试剂</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">实验室耗材</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">分析仪器</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">实验室设备</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">实验室家具</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">解决方案</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">高校实验室</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">药企研发实验室</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">第三方检测机构</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">工业实验室</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">疾控中心实验室</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-6">关于我们</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">公司简介</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">发展历程</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">团队介绍</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">荣誉资质</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-white/60 text-sm mb-4 md:mb-0">© 2025 科创试剂有限公司 版权所有 | 京ICP备12345678号</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-white/60 text-sm hover:text-white transition-colors">隐私政策</a>
+                        <a href="#" class="text-white/60 text-sm hover:text-white transition-colors">服务条款</a>
+                        <a href="#" class="text-white/60 text-sm hover:text-white transition-colors">网站地图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动端菜单切换
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.add('bg-white');
+                header.classList.remove('bg-white/95');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('bg-white/95');
+                header.classList.remove('bg-white');
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    // 关闭移动端菜单
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        const icon = menuBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>产品展厅管理 · 荣盛科技后台</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23004182'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'>荣</text></svg>">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <main class="main">
+            <header class="page-head">
+                <div>
+                    <div class="page-eyebrow"><span class="num">/ 09</span><span>SHOWROOM · BEST SELLERS</span></div>
+                    <h1 class="page-title">产品展厅</h1>
+                    <p class="page-subtitle">管理网站常卖品展示 · <a href="/showroom.html" target="_blank" style="color:var(--c-gold);">预览展厅页面 ↗</a></p>
+                </div>
+                <button class="btn btn-primary" id="btn-new-showroom">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    添加常卖品
+                </button>
+            </header>
+
+            <div class="tbl-wrap">
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th class="col-num">№</th>
+                            <th>产品名称</th>
+                            <th>分类</th>
+                            <th>品牌</th>
+                            <th>状态</th>
+                            <th class="col-actions">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="showroom-tbody">
+                        <tr><td colspan="6" class="empty"><span class="loading dark"></span>&nbsp;加载中...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal" id="showroom-modal">
+        <div class="modal-mask"></div>
+        <div class="modal-body lg">
+            <div class="modal-head">
+                <div class="t">
+                    <span class="eyebrow">SHOWROOM · EDITOR</span>
+                    <span id="showroom-modal-title">添加常卖品</span>
+                </div>
+                <button class="modal-close" onclick="closeModal('showroom-modal')">×</button>
+            </div>
+            <form id="showroom-form">
+                <div class="modal-content">
+                    <input type="hidden" id="showroom-id">
+
+                    <div class="form-grid">
+                        <div class="field full">
+                            <label><span>产品图片</span><span class="hint">/ IMAGE</span></label>
+                            <input type="hidden" id="showroom-image">
+                            <div class="upload-box" id="showroom-upload"></div>
+                        </div>
+
+                        <div class="field">
+                            <label><span>产品名称 *</span><span class="hint">/ NAME</span></label>
+                            <input type="text" id="showroom-name" required placeholder="如：盐酸 AR 500ml">
+                        </div>
+
+                        <div class="field">
+                            <label><span>分类 *</span><span class="hint">/ CATEGORY</span></label>
+                            <select id="showroom-category" required></select>
+                        </div>
+
+                        <div class="field">
+                            <label><span>品牌</span><span class="hint">/ BRAND</span></label>
+                            <input type="text" id="showroom-brand" placeholder="如：国药沪试">
+                        </div>
+
+                        <div class="field">
+                            <label><span>规格</span><span class="hint">/ SPEC</span></label>
+                            <input type="text" id="showroom-spec" placeholder="如：500ml/瓶 · AR分析纯">
+                        </div>
+
+                        <div class="field full">
+                            <label><span>产品描述</span><span class="hint">/ DESCRIPTION</span></label>
+                            <textarea id="showroom-description" placeholder="产品简介..."></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label><span>标签</span><span class="hint">/ TAGS · 逗号分隔</span></label>
+                            <input type="text" id="showroom-tags" placeholder="常备, AR级">
+                        </div>
+
+                        <div class="field">
+                            <label><span>排序</span><span class="hint">/ ORDER</span></label>
+                            <input type="number" id="showroom-order" min="1" value="1">
+                        </div>
+
+                        <div class="field">
+                            <label><span>热销标记</span><span class="hint">/ HOT</span></label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; margin-top:8px;">
+                                <input type="checkbox" id="showroom-hot"> 标记为热销常卖品
+                            </label>
+                        </div>
+
+                        <div class="field">
+                            <label><span>发布状态</span><span class="hint">/ PUBLISHED</span></label>
+                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; margin-top:8px;">
+                                <input type="checkbox" id="showroom-published" checked> 在前台展示
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('showroom-modal')">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script>
+        if (checkAuth()) {
+            renderSidebar('showroom');
+            initShowroom();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+$ python -c "
+with open('www.myrshx.com/index.html','r',encoding='utf-8') as f:
+    html = f.read()
+idx = html.find('合作品牌伙伴')
+if idx >= 0:
+    end = html.find('</section>', html.find('品牌展示区', idx) if '品牌展示区' in html else idx)
+    print(html[idx:end])
+"
+[exit 0]
+合作品牌伙伴</h3>
+                        <span class="brands-subtitle">OUR PARTNERS</span>
+                        <div class="brands-line"></div>
+                        <p class="brands-desc">与45+国内外知名品牌建立长期合作</p>
+                    </div>
+                    <div class="brand-logo-grid">
+                        <div class="brand-logo-card" data-brand="thermofisher"><span class="brand-logo-text brand-logo-thermofisher">Thermo<em>Fisher</em></span></div>
+                        <div class="brand-logo-card" data-brand="sigma"><span class="brand-logo-text brand-logo-sigma">SIGMA-ALDRICH</span></div>
+                        <div class="brand-logo-card" data-brand="alfa"><span class="brand-logo-text brand-logo-alfa">Alfa Aesar</span></div>
+                        <div class="brand-logo-card" data-brand="tci"><span class="brand-logo-text brand-logo-tci">TCI</span></div>
+                        <div class="brand-logo-card" data-brand="merck"><span class="brand-logo-text brand-logo-merck">Merck Millipore</span></div>
+                        <div class="brand-logo-card" data-brand="3m"><span class="brand-logo-text brand-logo-3m">3M</span></div>
+                        <div class="brand-logo-card" data-brand="mettler"><span class="brand-logo-text brand-logo-mettler">METTLER<em>TOLEDO</em></span></div>
+                        <div class="brand-logo-card" data-brand="eppendorf"><span class="brand-logo-text brand-logo-eppendorf">Eppendorf</span></div>
+                        <div class="brand-logo-card" data-brand="liebherr"><span class="brand-logo-text brand-logo-liebherr">Liebherr</span></div>
+                        <div class="brand-logo-card" data-brand="hellma"><span class="brand-logo-text brand-logo-hellma">Hellma</span></div>
+                        <div class="brand-logo-card" data-brand="polymer"><span class="brand-logo-text brand-logo-polymer">Polymer Source</span></div>
+                        <div class="brand-logo-card" data-brand="jk"><span class="brand-logo-text brand-logo-jk">J&amp;K</span></div>
+                        <div class="brand-logo-card" data-brand="triskem"><span class="brand-logo-text brand-logo-triskem">TrisKem</span></div>
+                        <div class="brand-logo-card" data-brand="asone"><span class="brand-logo-text brand-logo-asone">AS ONE</span></div>
+                        <div class="brand-logo-card" data-brand="synthware"><span class="brand-logo-text brand-logo-synthware">Synthware</span></div>
+                        <div class="brand-logo-card" data-brand="sinopharm"><span class="brand-logo-text brand-logo-cn brand-logo-sinopharm">国药 沪试<em>SINOPHARM</em></span></div>
+                        <div class="brand-logo-card" data-brand="aladdin"><span class="brand-logo-text brand-logo-cn brand-logo-aladdin">阿拉丁<em>Aladdin</em></span></div>
+                        <div class="brand-logo-card" data-brand="macklin"><span class="brand-logo-text brand-logo-cn brand-logo-macklin">麦克林<em>Macklin</em></span></div>
+                        <div class="brand-logo-card" data-brand="bide"><span class="brand-logo-text brand-logo-cn brand-logo-bide">毕得<em>Bide Pharm</em></span></div>
+                        <div class="brand-logo-card" data-brand="tanmo"><span class="brand-logo-text brand-logo-cn brand-logo-tanmo">坛墨质检<em>Tanmo</em></span></div>
+                        <div class="brand-logo-card" data-brand="scr"><span class="brand-logo-text brand-logo-scr">SCR<em>国药沪试</em></span></div>
+                        <div class="brand-logo-card" data-brand="greagent"><span class="brand-logo-text brand-logo-cn brand-logo-greagent">沃凯<em>Greagent</em></span></div>
+                        <div class="brand-logo-card" data-brand="yiheng"><span class="brand-logo-text brand-logo-cn brand-logo-yiheng">上海一恒<em>YIHENG</em></span></div>
+                        <div class="brand-logo-card" data-brand="yidian"><span class="brand-logo-text brand-logo-cn brand-logo-yidian">上海仪电分析<em>INESA</em></span></div>
+                        <div class="brand-logo-card" data-brand="leici"><span class="brand-logo-text brand-logo-cn brand-logo-leici">雷磁<em>LEICI</em></span></div>
+                        <div class="brand-logo-card" data-brand="lianhua"><span class="brand-logo-text brand-logo-cn brand-logo-lianhua">成都连华<em>LIANHUA</em></span></div>
+                        <div class="brand-logo-card" data-brand="kejing"><span class="brand-logo-text brand-logo-cn brand-logo-kejing">合肥科晶<em>MTI</em></span></div>
+                        <div class="brand-logo-card" data-brand="tianke"><span class="brand-logo-text brand-logo-cn brand-logo-tianke">天津天科<em>TIANKE</em></span></div>
+                        <div class="brand-logo-card" data-brand="shubo"><span class="brand-logo-text brand-logo-cn brand-logo-shubo">蜀玻 蜀牛<em>SHUBO</em></span></div>
+                        <div class="brand-logo-card" data-brand="kysd"><span class="brand-logo-text brand-logo-cn brand-logo-kysd">科研斯达<em>KYSD</em></span></div>
+                        <div class="brand-logo-card" data-brand="zhongyu"><span class="brand-logo-text brand-logo-cn brand-logo-zhongyu">上海众御<em>ZOYET</em></span></div>
+                    </div>
+                </div>
+
+                <div class="showroom-entry anim" data-anim="fadeUp">
+                    <div class="showroom-entry-inner">
+                        <div>
+                            <span class="showroom-entry-label">PRODUCT SHOWROOM</span>
+                            <h3>产品展厅 · 常卖品精选</h3>
+                            <p>浏览公司常备热销产品，化学试剂、玻璃器皿、实验耗材、仪器设备即需即取</p>
+                        </div>
+                        <a href="showroom.html" class="btn btn-primary">进入产品展厅 <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 解决方案 ==================== -->
+        <section class="section solutions-section" id="solutions">
+            <div class="solutions-bg-overlay"></div>
+            <div class="container">
+                <div class="section-header section-header-light anim" data-anim="fadeUp">
+                    <span class="section-deco section-deco-light"></span>
+                    <h2 class="section-title">解决方案</h2>
+                    <p class="section-subtitle">SOLUTIONS</p>
+                    <div class="section-line section-line-light"></div>
+                </div>
+                <div class="solutions-grid">
+                    <a href="solutions.html#01" class="solution-card anim" data-anim="fadeUp" style="text-decoration:none;color:inherit;">
+                        <span class="solution-number">01</span>
+                        <h4>教育科研实验室</h4>
+                        <p>为高校及科研院所提供实验室整体规划、建设及配套设备耗材一站式服务，助力科研创新。</p>
+                    </a>
+                    <a href="solutions.html#02" class="solution-card anim" data-anim="fadeUp" style="text-decoration:none;color:inherit;">
+                        <span class="solution-number">02</span>
+                        <h4>环保检测实验室</h4>
+                        <p>提供环境监测实验室建设方案，涵盖水质、土壤、大气等检测所需全套设备与耗材。</p>
+                    </a>
+                    <a href="solutions.html#03" class="solution-card anim" data-anim="fadeUp" style="text-decoration:none;color:inherit;">
+                        <span class="solution-number">03</span>
+                        <h4>食品安全检测</h4>
+                        <p>针对食品安全检测需求，提供从实验室建设到检测设备、标准试剂的全链条解决方案。</p>
+                    </a>
+                    <a href="solutions.html#04" class="solution-card anim" data-anim="fadeUp" style="text-decoration:none;color:inherit;">
+                        <span class="solution-number">04</span>
+                        <h4>医疗卫生实验室</h4>
+                        <p>为医疗卫生机构提供符合GMP/GLP标准的实验室建设及配套服务，保障检验质量。</p>
+                    </a>
+                    <a href="solutions.html#05" class="solution-card anim" data-anim="fadeUp" style="text-decoration:none;color:inherit;">
+                        <span class="solution-number">05</span>
+                        <h4>工业制造实验室</h4>
+                        <p>服务工业制造企业质检实验室需求，提供仪器设备、试剂耗材及技术支持全套方案。</p>
+                    </a>
+                    <a href="solutions.html#06" class="solution-card anim" data-anim="fadeUp" style="text-decoration:none;color:inherit;">
+                        <span class="solution-number">06</span>
+                        <h4>定制化实验室方案</h4>
+                        <p>根据客户个性化需求，量身定制实验室解决方案，从规划设计到建设运维全程服务。</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+       <!-- ==================== 企业实力 ==================== -->
+        <section class="section strength-section" id="strength">
+            <div class="container">
+                <div class="section-header section-header-light anim" data-anim="fadeUp">
+                    <span class="section-deco section-deco-light"></span>
+                    <h2 class="section-title">企业实力</h2>
+                    <p class="section-subtitle">OUR STRENGTH</p>
+                    <div class="section-line section-line-light"></div>
+                </div>
+                <!-- Tab 导航 -->
+                <div class="strength-tabs-wrap anim" data-anim="fadeUp">
+                    <div class="strength-tabs">
+                        <span class="strength-tab-indicator" aria-hidden="true"></span>
+                        <button class="strength-tab active" data-tab="responsibility" type="button">
+                            <svg class="strength-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>社会责任</span>
+                        </button>
+                        <button class="strength-tab" data-tab="brand" type="button">
+                            <svg class="strength-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>品牌价值</span>
+                        </button>
+                        <button class="strength-tab" data-tab="position" type="button">
+                            <svg class="strength-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            <span>行业地位</span>
+                        </button>
+                        <button class="strength-tab" data-tab="management" type="button">
+                            <svg class="strength-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/></svg>
+                            <span>管理实践</span>
+                        </button>
+                        <button class="strength-tab" data-tab="partners" type="button">
+                            <svg class="strength-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <span>服务客群</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Tab 内容区 -->
+                <div class="strength-content anim" data-anim="fadeUp">
+                    <!-- Tab 1: 社会责任 -->
+                    <div class="strength-panel active" id="tab-responsibility">
+                        <div class="strength-panel-inner">
+                            <div class="strength-achievements">
+                                <article class="strength-achievement"><span class="strength-achievement-num">01</span><p>被评为绵阳市涪城区「爱心企业」</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">02</span><p>被涪城区工区街道评为先进单位</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">03</span><p>多年支持地方公益事业与教育项目</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">04</span><p>积极参与社区环保与安全生产宣传</p></article>
+                                <article class="strength-achievement strength-achievement--wide"><span class="strength-achievement-num">05</span><p>为科研机构、高校等提供专业服务</p></article>
+                            </div>
+                            <aside class="strength-feature strength-feature--csr">
+                                <div class="strength-feature-bg"></div>
+                                <div class="strength-feature-body">
+                                    <span class="strength-feature-tag">CSR</span>
+                                    <h3 class="strength-feature-title">社会责任<br>回馈社会</h3>
+                                    <p class="strength-feature-desc">深耕本地，以专业能力与资源持续投身公益、教育与社区共建。</p>
+                                    <div class="strength-feature-metrics">
+                                        <div class="strength-feature-metric"><strong>爱心</strong><span>企业荣誉</span></div>
+                                        <div class="strength-feature-metric"><strong>多年</strong><span>公益践行</span></div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                    <!-- Tab 2: 品牌价值 -->
+                    <div class="strength-panel" id="tab-brand">
+                        <div class="strength-panel-inner">
+                            <div class="strength-achievements strength-achievements--compact">
+                                <article class="strength-achievement"><span class="strength-achievement-num">01</span><p>服务理念：服务更专业，客户更省心</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">02</span><p>「智能实验室一站式方案解决专家」</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">03</span><p>30+ 年品牌沉淀</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">04</span><p>自主品牌战略：2026年自主品牌销售占比达 40%</p></article>
+                                <article class="strength-achievement strength-achievement--wide"><span class="strength-achievement-num">05</span><p>电商业务布局：2026年电商销售占比达 70%</p></article>
+                            </div>
+                            <div class="strength-data-cards">
+                                <div class="strength-data-card"><span class="sdc-number">4000<span class="sdc-unit">+</span></span><span class="sdc-label">常备单品</span></div>
+                                <div class="strength-data-card"><span class="sdc-number">45<span class="sdc-unit">+</span></span><span class="sdc-label">代理品牌</span></div>
+                                <div class="strength-data-card strength-data-card--accent"><span class="sdc-number">99<span class="sdc-unit">%+</span></span><span class="sdc-label">一次配送合格率</span></div>
+                                <div class="strength-data-card strength-data-card--gold"><span class="sdc-number">100<span class="sdc-unit">%</span></span><span class="sdc-label">验收合格率</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 3: 行业地位 -->
+                    <div class="strength-panel" id="tab-position">
+                        <div class="strength-panel-inner strength-panel-single">
+                            <div class="strength-achievements strength-achievements--grid">
+                                <article class="strength-achievement"><span class="strength-achievement-num">01</span><p>绵阳市唯一具备危险化学品、易制毒、易制爆化学品经营兼存储许可的服务商</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">02</span><p>中国工程物理研究院定点供应商</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">03</span><p>绵阳中小企业 50 强</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">04</span><p>多家高校、科研机构、政府部门长期合作伙伴</p></article>
+                                <article class="strength-achievement strength-achievement--wide"><span class="strength-achievement-num">05</span><p>川北地区实验室服务行业领军企业</p></article>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 4: 管理实践 -->
+                    <div class="strength-panel" id="tab-management">
+                        <div class="strength-panel-inner strength-panel-single">
+                            <div class="strength-achievements strength-achievements--grid strength-achievements--six">
+                                <article class="strength-achievement"><span class="strength-achievement-num">01</span><p>金蝶 K/3 Cloud 数字化管理系统</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">02</span><p>完善的质量三包机制</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">03</span><p>ISO 标准化作业流程</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">04</span><p>商品配送一次合格率 &gt; 99%</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">05</span><p>验收合格率 100%</p></article>
+                                <article class="strength-achievement"><span class="strength-achievement-num">06</span><p>专业 IT 团队持续优化内部流程</p></article>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 5: 服务客群 -->
+                    <div class="strength-panel" id="tab-partners">
+                        <div class="strength-panel-inner">
+                            <div class="strength-partners-grid">
+                                <div class="partner-category-card">
+                                    <div class="partner-card-icon partner-card-icon--edu">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 2 3 6 3s6-2 6-3v-5"/></svg>
+                                    </div>
+                                    <h5>高等院校</h5>
+                                    <p>与多所高校建立长期采购合作</p>
+                                </div>
+                                <div class="partner-category-card">
+                                    <div class="partner-card-icon partner-card-icon--sci">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3h6v7H9zM5 10h14v4a7 7 0 0 1-14 0v-4z"/><path d="M10 21h4"/></svg>
+                                    </div>
+                                    <h5>科研机构</h5>
+                                    <p>中国工程物理研究院等定点供应</p>
+                                </div>
+                                <div class="partner-category-card">
+                                    <div class="partner-card-icon partner-card-icon--med">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/></svg>
+                                    </div>
+                                    <h5>医疗机构</h5>
+                                    <p>医院、疾控中心等专业服务</p>
+                                </div>
+                                <div class="partner-category-card">
+                                    <div class="partner-card-icon partner-card-icon--ind">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 20h20M5 20V9l7-4 7 4v11"/><path d="M9 20v-6h6v6"/></svg>
+                                    </div>
+                                    <h5>生产企业</h5>
+                                    <p>食品、制药、化工行业重要供应商</p>
+                                </div>
+                                <div class="partner-category-card">
+                                    <div class="partner-card-icon partner-card-icon--gov">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/></svg>
+                                    </div>
+                                    <h5>政府部门</h5>
+                                    <p>环保、质监等政府机构指定服务商</p>
+                                </div>
+                                <div class="partner-category-card">
+                                    <div class="partner-card-icon partner-card-icon--lab">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 2v6l-4 10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2L15 8V2"/><path d="M9 2h6"/></svg>
+                                    </div>
+                                    <h5>检测机构</h5>
+                                    <p>第三方检测、质量监督机构</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 服务客户 ==================== -->
+        <section id="clients" class="clients-section">
+            <div class="container">
+                <div class="section-header anim" data-anim="fadeUp">
+                    <div class="section-eyebrow">OUR CLIENTS</div>
+                    <h2 class="section-title">服务客户</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">携手众多知名科研、高校、企业机构，共建一站式实验室解决方案</p>
+                </div>
+            </div>
+
+            <!-- 无缝滚动轨道（全宽） -->
+            <div class="clients-marquee-wrap anim" data-anim="fadeUp">
+                <div class="clients-track">
+                    <!-- 第一组：12个Logo -->
+                    <div class="client-logo-card">
+                        <img src="images/logos/caep_text.svg" alt="中国工程物理研究院">
+                        <span>中国工程物理研究院</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/swust.svg" alt="西南科技大学">
+                        <span>西南科技大学</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/mtc.png" alt="绵阳师范学院">
+                        <span>绵阳师范学院</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/cardc_text.svg" alt="中国空气动力研究与发展中心">
+                        <span>中国空气动力研究与发展中心</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/changhong.png" alt="四川长虹">
+                        <span>四川长虹</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/jezetek.png" alt="四川九洲">
+                        <span>四川九洲</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/hys.png" alt="好医生药业">
+                        <span>好医生药业</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/emtco.png" alt="四川东材科技">
+                        <span>四川东材科技</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/swjtu.png" alt="西南交通大学">
+                        <span>西南交通大学</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/cnpc_text.svg" alt="中国石油">
+                        <span>中国石油</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/sccdc_text.svg" alt="四川省疾控中心">
+                        <span>四川省疾控中心</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/spqi.png" alt="四川省质检院">
+                        <span>四川省质检院</span>
+                    </div>
+
+                    <!-- 第二组：复制实现无缝循环 -->
+                    <div class="client-logo-card">
+                        <img src="images/logos/caep_text.svg" alt="中国工程物理研究院">
+                        <span>中国工程物理研究院</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/swust.svg" alt="西南科技大学">
+                        <span>西南科技大学</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/mtc.png" alt="绵阳师范学院">
+                        <span>绵阳师范学院</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/cardc_text.svg" alt="中国空气动力研究与发展中心">
+                        <span>中国空气动力研究与发展中心</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/changhong.png" alt="四川长虹">
+                        <span>四川长虹</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/jezetek.png" alt="四川九洲">
+                        <span>四川九洲</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/hys.png" alt="好医生药业">
+                        <span>好医生药业</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/emtco.png" alt="四川东材科技">
+                        <span>四川东材科技</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/swjtu.png" alt="西南交通大学">
+                        <span>西南交通大学</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/cnpc_text.svg" alt="中国石油">
+                        <span>中国石油</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/sccdc_text.svg" alt="四川省疾控中心">
+                        <span>四川省疾控中心</span>
+                    </div>
+                    <div class="client-logo-card">
+                        <img src="images/logos/spqi.png" alt="四川省质检院">
+                        <span>四川省质检院</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 企业荣誉 ==================== -->
+        <section class="section honors-section" id="honors">
+            <div class="container">
+                <div class="section-header anim" data-anim="fadeUp">
+                    <span class="section-deco"></span>
+                    <h2 class="section-title">企业荣誉</h2>
+                    <p class="section-subtitle">HONORS &amp; AWARDS</p>
+                    <div class="section-line"></div>
+                </div>
+                <div class="honors-grid">
+                    <div class="honor-card anim" data-anim="fadeUp">
+                        <div class="honor-top-bar"></div>
+                        <div class="honor-date">2012年4月</div>
+                        <div class="honor-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a017" stroke-width="1.5"><path d="M12 15l-3.5 2 1-4L6 10l4-.5L12 6l2 3.5 4 .5-3.5 3 1 4z"/></svg>
+                        </div>
+                        <p>荣获2011年度易制毒化学品管理工作<br>"优秀企业"称号</p>
+                    </div>
+                    <div class="honor-card anim" data-anim="fadeUp">
+                        <div class="honor-top-bar"></div>
+                        <div class="honor-date">2016年4月</div>
+                        <div class="honor-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a017" stroke-width="1.5"><path d="M12 15l-3.5 2 1-4L6 10l4-.5L12 6l2 3.5 4 .5-3.5 3 1 4z"/></svg>
+                        </div>
+                        <p>荣获2015年度安全生产工作<br>"先进单位"称号</p>
+                    </div>
+                    <div class="honor-card anim" data-anim="fadeUp">
+                        <div class="honor-top-bar"></div>
+                        <div class="honor-date">2022年9月</div>
+                        <div class="honor-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a017" stroke-width="1.5"><path d="M12 15l-3.5 2 1-4L6 10l4-.5L12 6l2 3.5 4 .5-3.5 3 1 4z"/></svg>
+                        </div>
+                        <p>荣获2022年度绵阳市涪城区<br>民营企业调查点工作"先进单位"称号</p>
+                    </div>
+                    <div class="honor-card anim" data-anim="fadeUp">
+                        <div class="honor-top-bar"></div>
+                        <div class="honor-date">2022年12月</div>
+                        <div class="honor-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e05555" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <p>被绵阳中小商会<br>评为爱心企业</p>
+                    </div>
+                    <div class="honor-card anim" data-anim="fadeUp">
+                        <div class="honor-top-bar"></div>
+                        <div class="honor-date">2023年12月</div>
+                        <div class="honor-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d4a017" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <p>绵阳市企业联合会/企业家协会授予<br>"绵阳市服务业企业50强"</p>
+                    </div>
+                </div>
+                <!-- 资质证书展示 -->
+                <div class="honor-certificates anim" data-anim="fadeUp">
+                    <h3 style="text-align: center; font-size: 22px; color: var(--text-dark); margin: 50px 0 30px; font-weight: 700;">资质证书</h3>
+                    <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                        <div style="flex: 0 0 auto; max-width: 360px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                            <img src="images/pdf_img_21_4.jpeg" alt="危险化学品经营许可证" style="width: 100%; height: auto; display: block;">
+                        </div>
+                        <div style="flex: 0 0 auto; max-width: 360px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+                            <div sty
+
+[… truncated 34903 chars …]

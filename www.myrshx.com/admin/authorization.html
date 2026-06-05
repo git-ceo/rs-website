@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>品牌授权管理 · 荣盛科技后台</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23004182'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='bold'>荣</text></svg>">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <main class="main">
+            <header class="page-head">
+                <div>
+                    <div class="page-eyebrow"><span class="num">/ 06</span><span>BRAND AUTHORIZATION</span></div>
+                    <h1 class="page-title">品牌授权管理</h1>
+                    <p class="page-subtitle">管理官方授权书图片 · 化学试剂 / 仪器设备</p>
+                </div>
+                <button class="btn btn-primary" id="btn-new-auth">
+                    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    新增授权
+                </button>
+            </header>
+
+            <!-- 分类切换 -->
+            <div class="tab-bar" id="auth-tabs">
+                <button class="tab active" data-cat="all">全部</button>
+                <button class="tab" data-cat="reagent">📜 化学试剂</button>
+                <button class="tab" data-cat="instrument">🔬 仪器设备</button>
+            </div>
+
+            <div class="carousel-grid" id="auth-grid">
+                <div class="page-loading" style="grid-column:1/-1;">
+                    <div class="loading dark"></div>
+                    <div>加载中...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 新增/编辑弹窗 -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-mask"></div>
+        <div class="modal-body lg">
+            <div class="modal-head">
+                <div class="t">
+                    <span class="eyebrow">AUTHORIZATION · EDITOR</span>
+                    <span id="auth-modal-title">新增授权书</span>
+                </div>
+                <button class="modal-close" onclick="closeModal('auth-modal')">×</button>
+            </div>
+            <form id="auth-form">
+                <div class="modal-content">
+                    <input type="hidden" id="auth-id">
+                    <input type="hidden" id="auth-image">
+
+                    <div class="form-grid">
+                        <div class="field full">
+                            <label><span>授权书图片 *</span><span class="hint">/ IMAGE</span></label>
+                            <div class="upload-box" id="auth-upload"></div>
+                        </div>
+
+                        <div class="field">
+                            <label><span>品牌名称 *</span><span class="hint">/ BRAND</span></label>
+                            <input type="text" id="auth-brand" required placeholder="例如：阿拉丁 / 芯硅谷">
+                        </div>
+
+                        <div class="field">
+                            <label><span>分类 *</span><span class="hint">/ CATEGORY</span></label>
+                            <select id="auth-category" required>
+                                <option value="reagent">📜 化学试剂授权</option>
+                                <option value="instrument">🔬 仪器设备授权</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('auth-modal')">取消</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+    <script>
+        if (checkAuth()) {
+            renderSidebar('authorization');
+            initAuthorization();
+        }
+    </script>
+</body>
+</html>
