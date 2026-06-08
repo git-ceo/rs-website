@@ -79,7 +79,7 @@ function renderNewsDetail(item) {
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc && item.summary) metaDesc.setAttribute('content', item.summary);
 
-    var img = item.image || 'images/pdf_img_40_4.jpeg';
+    var img = item.image || 'imgs/news/news-1.jpeg';
     var dateStr = formatNewsDate(item.date);
     var contentHtml = item.content || '<p>' + escapeHtml(item.summary || '') + '</p>';
 

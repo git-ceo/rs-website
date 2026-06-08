@@ -564,7 +564,7 @@ async function loadNews() {
         // 仅渲染前 3 条新闻，与静态结构保持一致
         container.innerHTML = news.slice(0, 3).map(function (item, idx) {
             var dateInfo = parseNewsDate(item.date);
-            var imageUrl = item.image || 'images/pdf_img_40_4.jpeg';
+            var imageUrl = item.image || 'imgs/news/news-1.jpeg';
             // 兼容静态样式：第 2、3 张额外加 news-image-2 / news-image-3 修饰类
             var imageClass = idx === 0
                 ? 'news-image'

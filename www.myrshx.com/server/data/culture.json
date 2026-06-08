@@ -36,91 +36,91 @@
       "id": 2,
       "category": "cooking",
       "title": "郑经理特色菜·干锅掌翅",
-      "image": "images/pdf_img_64_4.jpeg",
+      "image": "imgs/culture/企业文化 (1).png",
       "order": 2
     },
     {
       "id": 3,
       "category": "birthday",
       "title": "集体庆祝生日快乐",
-      "image": "images/pdf_img_66_4.jpeg",
+      "image": "imgs/culture/企业文化 (2).png",
       "order": 1
     },
     {
       "id": 4,
       "category": "birthday",
       "title": "温馨生日祝福",
-      "image": "images/pdf_img_66_4.jpeg",
+      "image": "imgs/culture/企业文化 (2).png",
       "order": 2
     },
     {
       "id": 5,
       "category": "travel",
       "title": "春风十里·羌王竹海",
-      "image": "images/pdf_img_63_4.jpeg",
+      "image": "imgs/culture/企业文化 (3).png",
       "order": 1
     },
     {
       "id": 6,
       "category": "travel",
       "title": "北京参展之旅",
-      "image": "images/pdf_img_67_4.jpeg",
+      "image": "imgs/culture/企业文化 (4).png",
       "order": 2
     },
     {
       "id": 7,
       "category": "travel",
       "title": "九寨沟之旅",
-      "image": "images/pdf_img_67_4.jpeg",
+      "image": "imgs/culture/企业文化 (4).png",
       "order": 3
     },
     {
       "id": 8,
       "category": "gala",
       "title": "2023年年会大合照",
-      "image": "images/pdf_img_68_4.jpeg",
+      "image": "imgs/culture/企业文化 (5).png",
       "order": 1
     },
     {
       "id": 9,
       "category": "gala",
       "title": "三十而立·行远明方",
-      "image": "images/pdf_img_68_4.jpeg",
+      "image": "imgs/culture/企业文化 (6).png",
       "order": 2
     },
     {
       "id": 10,
       "category": "gala",
       "title": "员工自编节目表演",
-      "image": "images/pdf_img_69_4.jpeg",
+      "image": "imgs/culture/企业文化 (6).png",
       "order": 3
     },
     {
       "id": 11,
       "category": "outdoor",
       "title": "2022年团队拓展训练",
-      "image": "images/pdf_img_70_4.jpeg",
+      "image": "imgs/culture/企业文化 (7).png",
       "order": 1
     },
     {
       "id": 12,
       "category": "outdoor",
       "title": "2013年户外拓展活动",
-      "image": "images/pdf_img_70_4.jpeg",
+      "image": "imgs/culture/企业文化 (7).png",
       "order": 2
     },
     {
       "id": 13,
       "category": "charity",
       "title": "手拉手心连心·献血队",
-      "image": "images/pdf_img_71_4.jpeg",
+      "image": "imgs/culture/企业文化 (8).png",
       "order": 1
     },
     {
       "id": 14,
       "category": "charity",
       "title": "众志成城·抗击疫情",
-      "image": "images/pdf_img_71_4.jpeg",
+      "image": "imgs/culture/企业文化 (8).png",
       "order": 2
     }
   ]

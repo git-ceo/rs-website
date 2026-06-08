@@ -80,7 +80,7 @@ function renderNewsPage() {
     var pageItems = _allNews.slice(start, start + NEWS_PAGE_SIZE);
 
     listEl.innerHTML = pageItems.map(function (item) {
-        var img = item.image || 'images/pdf_img_40_4.jpeg';
+        var img = item.image || 'imgs/news/news-1.jpeg';
         var detailUrl = 'news-detail.html?id=' + encodeURIComponent(item.id);
         return ''
             + '<a href="' + detailUrl + '" class="news-list-item anim animated">'

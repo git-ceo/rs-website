@@ -47,6 +47,17 @@ app.use('/admin', express.static(path.join(__dirname, '../admin/')));
 app.use('/uploads', express.static(path.join(__dirname, './uploads/')));
 
 // 已有图片目录
+app.use('/imgs/culture', express.static(path.join(__dirname, '../images/culture/')));
+app.use('/imgs/banner', express.static(path.join(__dirname, '../images/banner/')));
+app.use('/imgs/honors', express.static(path.join(__dirname, '../images/honors/')));
+app.use('/imgs/company', express.static(path.join(__dirname, '../images/company/')));
+app.use('/imgs/warehouse', express.static(path.join(__dirname, '../images/warehouse/')));
+app.use('/imgs/lab', express.static(path.join(__dirname, '../images/lab/')));
+app.use('/imgs/certificates', express.static(path.join(__dirname, '../images/certificates/')));
+app.use('/imgs/authorization', express.static(path.join(__dirname, '../images/authorization/')));
+app.use('/imgs/products', express.static(path.join(__dirname, '../images/products/')));
+app.use('/imgs/news', express.static(path.join(__dirname, '../images/news/')));
+app.use('/imgs/staff', express.static(path.join(__dirname, '../images/staff/')));
 app.use('/images', express.static(path.join(__dirname, '../images/')));
 
 // JSON 数据文件（仅 GET 访问）
