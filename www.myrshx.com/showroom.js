@@ -171,3 +171,4 @@ function escapeHtml(str) {
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
 }
+\n\nwindow.addEventListener("resize", function(){\n    var grid = document.getElementById("showroomGrid");\n    if (!grid) return;\n    var cols = window.getComputedStyle(grid).gridTemplateColumns.split(" ").length;\n    var cards = grid.querySelectorAll(".showroom-card");\n    var complete = Math.floor(cards.length / cols) * cols;\n    for (var ci = 0; ci < cards.length; ci++) {\n        cards[ci].style.display = ci < complete ? "" : "none";\n    }\n});

@@ -37,7 +37,7 @@
       "category": "cooking",
       "title": "郑经理特色菜·干锅掌翅",
       "image": "imgs/culture/企业文化 (1).png",
-      "order": 2
+      "order": 1
     },
     {
       "id": 3,
@@ -45,13 +45,6 @@
       "title": "集体庆祝生日快乐",
       "image": "imgs/culture/企业文化 (2).png",
       "order": 1
-    },
-    {
-      "id": 4,
-      "category": "birthday",
-      "title": "温馨生日祝福",
-      "image": "imgs/culture/企业文化 (2).png",
-      "order": 2
     },
     {
       "id": 5,
@@ -68,13 +61,6 @@
       "order": 2
     },
     {
-      "id": 7,
-      "category": "travel",
-      "title": "九寨沟之旅",
-      "image": "imgs/culture/企业文化 (4).png",
-      "order": 3
-    },
-    {
       "id": 8,
       "category": "gala",
       "title": "2023年年会大合照",
@@ -89,13 +75,6 @@
       "order": 2
     },
     {
-      "id": 10,
-      "category": "gala",
-      "title": "员工自编节目表演",
-      "image": "imgs/culture/企业文化 (6).png",
-      "order": 3
-    },
-    {
       "id": 11,
       "category": "outdoor",
       "title": "2022年团队拓展训练",
@@ -103,25 +82,11 @@
       "order": 1
     },
     {
-      "id": 12,
-      "category": "outdoor",
-      "title": "2013年户外拓展活动",
-      "image": "imgs/culture/企业文化 (7).png",
-      "order": 2
-    },
-    {
       "id": 13,
       "category": "charity",
       "title": "手拉手心连心·献血队",
       "image": "imgs/culture/企业文化 (8).png",
       "order": 1
-    },
-    {
-      "id": 14,
-      "category": "charity",
-      "title": "众志成城·抗击疫情",
-      "image": "imgs/culture/企业文化 (8).png",
-      "order": 2
     }
   ]
 }

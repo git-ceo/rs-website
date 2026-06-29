@@ -154,7 +154,7 @@ function renderCultureGrid() {
     grid.innerHTML = filtered.map(function (item, i) {
         var cat = catMap[item.category] || {};
         var catLabel = ((cat.icon || '') + ' ' + (cat.name || item.category)).trim();
-        var wideClass = (i % 7 === 0 || i % 7 === 4) ? ' culture-card--wide' : '';
+        var wideClass = '';
         var imgSrc = item.image || '';
 
         return '<div class="culture-card' + wideClass + '" data-category="' + escapeHtml(item.category) + '">' +

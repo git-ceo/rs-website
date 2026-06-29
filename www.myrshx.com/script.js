@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     initStatsCounter();
     initContactForm();
     initBackToTop();
+    initFloatTools();
     initStrengthTabs();
-    initStrategyChart();
     initAuthLightbox();
     initCultureTabs();
     // 在所有静态初始化完成后再触发动态内容加载（优雅降级）
@@ -472,6 +472,19 @@ function initContactForm() {
 }
 
 /* ============================================
+   浮动工具切换
+   ============================================ */
+function initFloatTools() {
+    var toggle = document.querySelector('.float-tools-toggle');
+    var tools = document.querySelector('.float-tools');
+    if (!toggle || !tools) return;
+    toggle.addEventListener('click', function () {
+        tools.classList.toggle('active');
+        toggle.classList.toggle('active');
+    });
+}
+
+/* ============================================
    返回顶部模块
    ============================================ */
 function initBackToTop() {
@@ -540,7 +553,8 @@ async function loadDynamicContent() {
         await Promise.allSettled([
             loadNews(),
             loadCarousel(),
-            loadCompanyInfo()
+            loadCompanyInfo(),
+            loadAuthorization()
         ]);
     } catch (e) {
         console.log('动态内容加载跳过（静态模式）');
@@ -790,6 +804,56 @@ function escapeHtml(str) {
         .replace(/'/g, '&#39;');
 }
 
+/* ----------------------------------------
+   品牌授权动态加载
+   ---------------------------------------- */
+async function loadAuthorization() {
+    try {
+        var res = await fetch('/api/authorization');
+        if (!res.ok) return;
+        var json = await res.json();
+        var data = json.data || json;
+        var items = data.items || [];
+        if (!items.length) return;
+
+        var reagentGrid = document.getElementById('authGrid-reagent');
+        var instrumentGrid = document.getElementById('authGrid-instrument');
+        if (!reagentGrid && !instrumentGrid) return;
+
+        var reagentHtml = '';
+        var instrumentHtml = '';
+
+        items.sort(function (a, b) { return (a.order || 0) - (b.order || 0); });
+
+        items.forEach(function (item) {
+            var brand = escapeHtml(item.brand || '');
+            var brandEn = escapeHtml(item.brand_en || '');
+            var imgSrc = escapeHtml(item.image || '');
+            var html = '<figure class="auth-card">'
+                + '<div class="auth-card-frame">'
+                + '<img src="' + imgSrc + '" alt="' + brand + '授权书" loading="lazy">'
+                + '<span class="auth-zoom" aria-hidden="true">+</span>'
+                + '</div>'
+                + '<figcaption class="auth-card-label">'
+                + '<span class="auth-brand">' + brand + '</span>'
+                + '<span class="auth-brand-en">' + brandEn + '</span>'
+                + '</figcaption>'
+                + '</figure>';
+
+            if (item.category === 'reagent' && reagentGrid) {
+                reagentHtml += html;
+            } else if (item.category === 'instrument' && instrumentGrid) {
+                instrumentHtml += html;
+            }
+        });
+
+        if (reagentGrid) reagentGrid.innerHTML = reagentHtml;
+        if (instrumentGrid) instrumentGrid.innerHTML = instrumentHtml;
+    } catch (e) {
+        console.log('品牌授权加载跳过:', e);
+    }
+}
+
 // 为动态生成的 .anim 元素挂载 IntersectionObserver，以保持滚动动画一致
 function observeNewAnimElements(container) {
     if (!container || !('IntersectionObserver' in window)) return;
@@ -819,66 +883,47 @@ function observeNewAnimElements(container) {
     animElements.forEach(function (el) { observer.observe(el); });
 }
 
-/* ============================================
-   战略目标柱状图 - 入场动画
-   ============================================ */
-function initStrategyChart() {
-    var chartEl = document.querySelector('.strategy-chart');
-    if (!chartEl) return;
-
-    var anchors = chartEl.querySelectorAll('.bar-anchor');
-    if (!anchors.length) return;
-
-    // 记录目标高度，初始设为 0
-    anchors.forEach(function (anchor) {
-        anchor.dataset.targetHeight = anchor.style.height;
-        anchor.style.height = '0';
-        anchor.dataset.animated = 'false';
-    });
-
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                var chartAnchors = entry.target.querySelectorAll('.bar-anchor');
-                chartAnchors.forEach(function (anchor, i) {
-                    setTimeout(function () {
-                        anchor.style.height = anchor.dataset.targetHeight;
-                        anchor.dataset.animated = 'true';
-                    }, i * 150);
-                });
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.3 });
-
-    observer.observe(chartEl);
-}
 
 /* ============================================
    品牌授权 Lightbox · 编辑式画廊全屏查看
    ============================================ */
 function initAuthLightbox() {
-    var cards = document.querySelectorAll('.auth-card');
-    if (!cards.length) return;
+    var section = document.getElementById('authorization');
+    if (!section) return;
 
-    // 创建 lightbox（一次性）
-    var lb = document.createElement('div');
-    lb.className = 'auth-lightbox';
-    lb.setAttribute('role', 'dialog');
-    lb.setAttribute('aria-modal', 'true');
-    lb.setAttribute('aria-label', '授权书查看');
-    lb.innerHTML =
-        '<div class="auth-lightbox-frame">' +
-            '<button class="auth-lightbox-close" type="button" aria-label="关闭">\u00d7</button>' +
-            '<img alt="" />' +
-            '<div class="auth-lightbox-caption"></div>' +
-        '</div>';
-    document.body.appendChild(lb);
+    // 检查 lightbox 是否已创建，避免重复
+    var lb = document.querySelector('.auth-lightbox');
+    if (!lb) {
+        lb = document.createElement('div');
+        lb.className = 'auth-lightbox';
+        lb.setAttribute('role', 'dialog');
+        lb.setAttribute('aria-modal', 'true');
+        lb.setAttribute('aria-label', '授权书查看');
+        lb.innerHTML =
+            '<div class="auth-lightbox-frame">' +
+                '<button class="auth-lightbox-close" type="button" aria-label="关闭">\u00d7</button>' +
+                '<img alt="" />' +
+                '<div class="auth-lightbox-caption"></div>' +
+            '</div>';
+        document.body.appendChild(lb);
+
+        var lbClose = lb.querySelector('.auth-lightbox-close');
+        var lbFrame = lb.querySelector('.auth-lightbox-frame');
+
+        lb.addEventListener('click', function (e) {
+            if (e.target === lb) closeLightbox();
+        });
+        lbClose.addEventListener('click', closeLightbox);
+        lbFrame.addEventListener('click', function (e) {
+            if (e.target !== lbClose) e.stopPropagation();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && lb.classList.contains('active')) closeLightbox();
+        });
+    }
 
     var lbImg = lb.querySelector('img');
     var lbCap = lb.querySelector('.auth-lightbox-caption');
-    var lbClose = lb.querySelector('.auth-lightbox-close');
-    var lbFrame = lb.querySelector('.auth-lightbox-frame');
 
     function openLightbox(src, label) {
         lbImg.src = src;
@@ -894,28 +939,15 @@ function initAuthLightbox() {
         setTimeout(function () { lbImg.src = ''; }, 350);
     }
 
-    cards.forEach(function (card) {
-        card.addEventListener('click', function () {
-            var img = card.querySelector('img');
-            var brandEl = card.querySelector('.auth-brand');
-            if (!img) return;
-            var label = brandEl ? brandEl.textContent.trim() : (img.alt || '');
-            openLightbox(img.src, label);
-        });
-    });
-
-    // 点击遮罩关闭（点击画框内不关闭，除非点关闭按钮）
-    lb.addEventListener('click', function (e) {
-        if (e.target === lb) closeLightbox();
-    });
-    lbClose.addEventListener('click', closeLightbox);
-    // 阻止画框内点击冒泡到遮罩
-    lbFrame.addEventListener('click', function (e) {
-        if (e.target !== lbClose) e.stopPropagation();
-    });
-    // ESC 键关闭
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && lb.classList.contains('active')) closeLightbox();
+    // 使用事件委托：点击整个授权区域，向上查找 .auth-card
+    section.addEventListener('click', function (e) {
+        var card = e.target.closest('.auth-card');
+        if (!card) return;
+        var img = card.querySelector('img');
+        if (!img) return;
+        var brandEl = card.querySelector('.auth-brand');
+        var label = brandEl ? brandEl.textContent.trim() : (img.alt || '');
+        openLightbox(img.src, label);
     });
 }
 
@@ -941,50 +973,21 @@ function initCultureTabs() {
     });
 }
 
-/* ============================================
-   发展历程自动横向滚动
-   ============================================ */
-function initTimelineAutoScroll() {
-    var wrap = document.querySelector('.timeline-scroll-wrap');
-    if (!wrap) return;
-    console.log('Timeline auto-scroll started, scrollWidth=' + wrap.scrollWidth + ' clientWidth=' + wrap.clientWidth);
-    if (wrap.scrollWidth <= wrap.clientWidth) return; // 内容不溢出则无需滚动
 
-    var speed = 1.5; // 每 30ms 滚动的像素
-    var direction = 1;
-    var paused = false;
-
-    function step() {
-        if (paused) return;
-        wrap.scrollLeft += speed * direction;
-        if (wrap.scrollLeft >= wrap.scrollWidth - wrap.clientWidth) {
-            direction = -1;
-        } else if (wrap.scrollLeft <= 0) {
-            direction = 1;
-        }
-    }
-
-    setInterval(step, 30);
-
-    // 鼠标悬停暂停
-    wrap.addEventListener('mouseenter', function() { paused = true; });
-    wrap.addEventListener('mouseleave', function() { paused = false; });
-    // 触摸暂停
-    wrap.addEventListener('touchstart', function() { paused = true; });
-    wrap.addEventListener('touchend', function() { paused = false; });
-}
-
-// 启动发展历程自动滚动（DOM就绪后延时执行）
-if (document.readyState === 'complete') {
-    setTimeout(initTimelineAutoScroll, 800);
-} else {
-    window.addEventListener('load', function() {
-        setTimeout(initTimelineAutoScroll, 500);
-    });
-}
-
-
-// 宣传视频滚动自动播放
+// 宣传视频滚动缩放效果
+(function(){
+    var videoSec = document.querySelector('.video-section');
+    if (!videoSec) return;
+    var bgVideo = videoSec.querySelector('video');
+    if (!bgVideo) return;
+    bgVideo.style.transform = 'translate(-50%, -50%) scale(1)';
+    window.addEventListener('scroll', function(){
+        var rect = videoSec.getBoundingClientRect();
+        var progress = 1 - Math.max(0, Math.min(1, rect.top / window.innerHeight));
+        var scale = 1 + progress * 0.15;
+        bgVideo.style.transform = 'translate(-50%, -50%) scale(' + scale + ')';
+    }, { passive: true });
+})();
 (function() {
     var video = document.querySelector('.video-wrapper video');
     if (!video) return;

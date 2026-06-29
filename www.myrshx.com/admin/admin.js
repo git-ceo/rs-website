@@ -1033,6 +1033,7 @@ function renderAuthGrid() {
                 </div>
                 <div class="body">
                     <div class="ttl">${escapeHtml(item.brand)}</div>
+                    ${item.brand_en ? `<div class="sub">${escapeHtml(item.brand_en)}</div>` : ''}
                     <div class="acts">
                         <span class="btn-tag">#${item.id}</span>
                         <div>
@@ -1049,6 +1050,7 @@ function openAuthModal() {
     document.getElementById('auth-modal-title').textContent = '新增授权书';
     document.getElementById('auth-id').value = '';
     document.getElementById('auth-brand').value = '';
+    document.getElementById('auth-brand-en').value = '';
     document.getElementById('auth-category').value = 'reagent';
     document.getElementById('auth-image').value = '';
     bindUpload('auth-upload', (url) => {
@@ -1061,6 +1063,7 @@ async function saveAuth(e) {
     e.preventDefault();
     const payload = {
         brand: document.getElementById('auth-brand').value.trim(),
+        brand_en: document.getElementById('auth-brand-en').value.trim(),
         category: document.getElementById('auth-category').value,
         image: document.getElementById('auth-image').value
     };

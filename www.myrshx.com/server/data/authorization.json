@@ -16,6 +16,7 @@
       "id": 1,
       "category": "reagent",
       "brand": "阿拉丁 / 芯硅谷",
+      "brand_en": "aladdin · i-Quip",
       "image": "imgs/authorization/pdf_img_26_4.jpeg",
       "order": 1
     },
@@ -23,6 +24,7 @@
       "id": 2,
       "category": "reagent",
       "brand": "麦克林",
+      "brand_en": "MACKLIN",
       "image": "imgs/authorization/pdf_img_26_6.jpeg",
       "order": 2
     },
@@ -30,6 +32,7 @@
       "id": 3,
       "category": "reagent",
       "brand": "毕得医药",
+      "brand_en": "Bidepharm",
       "image": "imgs/authorization/pdf_img_26_7.jpeg",
       "order": 3
     },
@@ -37,6 +40,7 @@
       "id": 4,
       "category": "reagent",
       "brand": "国药集团",
+      "brand_en": "Sinopharm · 沪试/京试/沃凯/SCRC",
       "image": "imgs/authorization/pdf_img_27_4.jpeg",
       "order": 4
     },
@@ -44,6 +48,7 @@
       "id": 5,
       "category": "reagent",
       "brand": "致远化学 · 太阳牌",
+      "brand_en": "Tianjin Zhiyuan",
       "image": "imgs/authorization/pdf_img_27_5.jpeg",
       "order": 5
     },
@@ -51,6 +56,7 @@
       "id": 6,
       "category": "reagent",
       "brand": "成都金山化学",
+      "brand_en": "Chengdu Jinshan",
       "image": "imgs/authorization/pdf_img_27_6.jpeg",
       "order": 6
     },
@@ -58,6 +64,7 @@
       "id": 7,
       "category": "reagent",
       "brand": "天津科密欧",
+      "brand_en": "KERMEL",
       "image": "imgs/authorization/pdf_img_27_7.jpeg",
       "order": 7
     },
@@ -65,6 +72,7 @@
       "id": 8,
       "category": "reagent",
       "brand": "广东光华科技",
+      "brand_en": "Guanghua Sci-Tech",
       "image": "imgs/authorization/pdf_img_28_4.jpeg",
       "order": 8
     },
@@ -72,6 +80,7 @@
       "id": 9,
       "category": "reagent",
       "brand": "科隆化学",
+      "brand_en": "CHRON CHEMICALS",
       "image": "imgs/authorization/pdf_img_28_5.jpeg",
       "order": 9
     },
@@ -79,6 +88,7 @@
       "id": 10,
       "category": "reagent",
       "brand": "上海三爱思",
+      "brand_en": "SSS Reagent",
       "image": "imgs/authorization/pdf_img_28_7.jpeg",
       "order": 10
     },
@@ -86,6 +96,7 @@
       "id": 11,
       "category": "reagent",
       "brand": "金佰利",
+      "brand_en": "Kimberly-Clark · KIMTECH/KLEENEX",
       "image": "imgs/authorization/pdf_img_32_4.jpeg",
       "order": 11
     },
@@ -93,6 +104,7 @@
       "id": 12,
       "category": "reagent",
       "brand": "天玻",
+      "brand_en": "Tianjin Tianbo Glassware",
       "image": "imgs/authorization/pdf_img_32_6.jpeg",
       "order": 12
     },
@@ -100,6 +112,7 @@
       "id": 13,
       "category": "instrument",
       "brand": "梅特勒-托利多",
+      "brand_en": "METTLER TOLEDO",
       "image": "imgs/authorization/pdf_img_30_5.jpeg",
       "order": 1
     },
@@ -107,34 +120,23 @@
       "id": 14,
       "category": "instrument",
       "brand": "雷磁 · 上海仪电",
+      "brand_en": "Leici · INESA",
       "image": "imgs/authorization/pdf_img_29_7.jpeg",
       "order": 2
-    },
-    {
-      "id": 15,
-      "category": "instrument",
-      "brand": "连华科技",
-      "image": "imgs/authorization/pdf_img_30_4.jpeg",
-      "order": 3
     },
     {
       "id": 17,
       "category": "instrument",
       "brand": "沈阳科晶",
+      "brand_en": "Shenyang Kejing Automation",
       "image": "imgs/authorization/pdf_img_31_4.jpeg",
       "order": 5
-    },
-    {
-      "id": 18,
-      "category": "instrument",
-      "brand": "凤凰光学",
-      "image": "imgs/authorization/pdf_img_29_4.jpeg",
-      "order": 6
     },
     {
       "id": 19,
       "category": "instrument",
       "brand": "泰斯特",
+      "brand_en": "TAISITE Instruments",
       "image": "imgs/authorization/pdf_img_31_6.jpeg",
       "order": 7
     },
@@ -142,6 +144,7 @@
       "id": 20,
       "category": "instrument",
       "brand": "伟业计量 · BNCC",
+      "brand_en": "Beijing North Weiye / BNCC",
       "image": "imgs/authorization/pdf_img_32_7.jpeg",
       "order": 8
     },
@@ -149,6 +152,7 @@
       "id": 21,
       "category": "instrument",
       "brand": "麦迪康",
+      "brand_en": "Medicom",
       "image": "imgs/authorization/pdf_img_32_5.jpeg",
       "order": 9
     }

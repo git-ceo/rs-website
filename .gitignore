@@ -1,2 +1,69 @@
-﻿.bak
-node_modules
+# OS & editor
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+.venv/
+
+# Tool / IDE metadata
+.reasonix/
+.playwright-mcp/
+.codegraph/daemon.pid
+.codegraph/daemon.log
+.codegraph/codegraph.db*
+
+# Temporary / generated files (root)
+tmp*.txt
+tmp*.log
+*.tmp
+ssh_task.txt
+reasonix.toml
+
+# Root-level screenshots (generated during dev)
+brands-section.png
+img1.png
+img2.png
+phone_screen.png
+timeline-section.png
+
+# ML model files
+*.pt
+
+# Windows shortcuts
+*.lnk
+
+# One-off utility scripts (not part of the site)
+import_aat_whk.ps1
+_add_sections_api.py
+_fix_culture.py
+_gen_showroom_images.py
+_dl_clip.py
+_d.py
+_w2.py
+
+# Batch files (local)
+清理旧目录.bat
+npm start.bat
+npm stop.bat
+
+# Old website backup
+.bak/
+
+# Deploy artifacts
+deploy.py

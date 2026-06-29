@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "hero": true,
+    "video": true,
+    "about": true,
+    "strengths": true,
+    "warehouse": true,
+    "chairman": true,
+    "structure": true,
+    "stats": true,
+    "solutions": true,
+    "products": true,
+    "brands": true,
+    "honors": true,
+    "news": true,
+    "contact": true
+  }
+}

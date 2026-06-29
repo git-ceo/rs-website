@@ -838,7 +838,7 @@ app.get('/api/authorization', (req, res) => {
  */
 app.post('/api/authorization', authMiddleware, (req, res) => {
   try {
-    const { category, brand, image } = req.body;
+    const { category, brand, brand_en, image } = req.body;
 
     if (!category || !brand || !image) {
       return errorResponse(res, 400, '分类、品牌名和图片不能为空');
@@ -853,6 +853,7 @@ app.post('/api/authorization', authMiddleware, (req, res) => {
       id: maxId + 1,
       category,
       brand,
+      brand_en: brand_en || '',
       image,
       order: maxOrder + 1
     };
@@ -886,11 +887,12 @@ app.put('/api/authorization/:id', authMiddleware, (req, res) => {
       return errorResponse(res, 404, '授权书不存在');
     }
 
-    const { category, brand, image, order } = req.body;
+    const { category, brand, brand_en, image, order } = req.body;
     data.items[index] = {
       ...data.items[index],
       ...(category !== undefined && { category }),
       ...(brand !== undefined && { brand }),
+      ...(brand_en !== undefined && { brand_en }),
       ...(image !== undefined && { image }),
       ...(order !== undefined && { order })
     };
@@ -1162,6 +1164,11 @@ app.post('/api/upload', authMiddleware, (req, res) => {
     successResponse(res, { url }, '文件上传成功');
   });
 });
+
+
+// 板块可见性
+const sectionsConfig = require("./data/sections.json");
+app.get("/api/sections", (req, res) => res.json({ success: true, data: sectionsConfig.sections }));
 
 // ==================== 错误处理 ====================
 
