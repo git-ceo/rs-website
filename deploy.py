@@ -56,7 +56,7 @@ def mt_v():
     print(s)
 
 # rs-website
-RSS = Path("D:\\workspace\\rs-website\\www.myrshx.com")
+RSS = Path("D:\\dev\\rs-website\\www.myrshx.com")
 RSR = "/www/wwwroot/www.myrshx.com"
 RSP = 3000
 

@@ -160,7 +160,21 @@ function renderShowroomItems() {
     }).join('');
 
     initScrollAnimations();
+    trimShowroomGridRows();
 }
+
+function trimShowroomGridRows() {
+    var grid = document.getElementById('showroomGrid');
+    if (!grid) return;
+    var cols = window.getComputedStyle(grid).gridTemplateColumns.split(' ').length;
+    var cards = grid.querySelectorAll('.showroom-card');
+    var complete = Math.floor(cards.length / cols) * cols;
+    for (var ci = 0; ci < cards.length; ci++) {
+        cards[ci].style.display = ci < complete ? '' : 'none';
+    }
+}
+
+window.addEventListener('resize', trimShowroomGridRows);
 
 function escapeHtml(str) {
     if (str == null) return '';
@@ -171,4 +185,3 @@ function escapeHtml(str) {
         .replace(/"/g, '&quot;')
         .replace(/'/g, '&#39;');
 }
-\n\nwindow.addEventListener("resize", function(){\n    var grid = document.getElementById("showroomGrid");\n    if (!grid) return;\n    var cols = window.getComputedStyle(grid).gridTemplateColumns.split(" ").length;\n    var cards = grid.querySelectorAll(".showroom-card");\n    var complete = Math.floor(cards.length / cols) * cols;\n    for (var ci = 0; ci < cards.length; ci++) {\n        cards[ci].style.display = ci < complete ? "" : "none";\n    }\n});
