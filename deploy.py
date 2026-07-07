@@ -90,7 +90,7 @@ def rs_r():
     _ssh_(f"sudo chown -R www:www {RSR}")
     _ssh_("ps aux | grep server.js | grep -v grep | awk '{print $2}' | xargs -r sudo kill")
     time.sleep(1)
-    r = _ssh_(f"cd {RSR}/server && nohup sudo -u www node server.js > /tmp/rs-website.log 2>&1 &")
+    r = _ssh_(f"cd {RSR}/server && nohup sudo -u www node server.js > /tmp/rs-website.log 2>&1 </dev/null &")
     print("OK restarted" if not r else "WARN restart")
 
 def rs_v():
