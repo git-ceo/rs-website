@@ -1,0 +1,331 @@
+/* ============================================
+   荣盛科技官网 · 演示模式样式
+   用于半年总结会录屏展示
+   ============================================ */
+
+body.demo-mode {
+    cursor: none;
+}
+
+html.demo-mode {
+    scroll-behavior: auto !important;
+}
+
+html.demo-mode,
+body.demo-mode {
+    overflow-y: auto !important;
+    height: auto !important;
+}
+
+body.demo-mode .float-tools,
+body.demo-mode .float-tools-toggle,
+body.demo-mode .back-to-top,
+body.demo-mode .video-sound-hint {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.4s ease;
+}
+
+body.demo-mode .header {
+    pointer-events: none;
+}
+
+body.demo-record .demo-badge,
+body.demo-record .demo-scene-dots {
+    display: none;
+}
+
+/* ---- 演示层容器 ---- */
+.demo-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    pointer-events: none;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+.demo-start-screen,
+.demo-exit-btn {
+    pointer-events: auto;
+}
+
+.demo-overlay.is-idle {
+    pointer-events: none;
+}
+
+.demo-overlay.is-idle .demo-start-screen {
+    pointer-events: auto;
+}
+
+/* ---- 开场倒计时 ---- */
+.demo-start-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 38, 77, 0.97), rgba(0, 61, 122, 0.95));
+    color: #fff;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.demo-start-screen.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.demo-start-logo {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    margin-bottom: 24px;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+    animation: demo-logo-in 0.8s ease-out;
+}
+
+.demo-start-title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 0 0 8px;
+    animation: demo-fade-up 0.8s ease-out 0.15s both;
+}
+
+.demo-start-subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 6px;
+    margin: 0 0 48px;
+    animation: demo-fade-up 0.8s ease-out 0.3s both;
+}
+
+.demo-countdown {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(135deg, #fff, #7ec8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: demo-pulse 1s ease-in-out infinite;
+}
+
+.demo-countdown.is-go {
+    font-size: 36px;
+    letter-spacing: 8px;
+    animation: demo-fade-up 0.5s ease-out;
+}
+
+.demo-start-hint {
+    margin-top: 32px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    animation: demo-fade-up 0.8s ease-out 0.5s both;
+}
+
+/* ---- 顶部进度条 ---- */
+.demo-progress-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 100002;
+    background: rgba(255, 255, 255, 0.08);
+    pointer-events: none;
+}
+
+.demo-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #2b7de9, #f59e0b, #2b7de9);
+    background-size: 200% 100%;
+    animation: demo-progress-shine 2s linear infinite;
+    transition: width 0.3s linear;
+    border-radius: 0 2px 2px 0;
+}
+
+/* ---- 场景指示点 ---- */
+.demo-scene-dots {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 100002;
+    display: flex;
+    gap: 6px;
+    pointer-events: none;
+}
+
+.demo-scene-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+.demo-scene-dot.is-active {
+    width: 20px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #2b7de9, #f59e0b);
+}
+
+.demo-scene-dot.is-done {
+    background: rgba(43, 125, 233, 0.5);
+}
+
+/* ---- 角落标识 ---- */
+.demo-badge {
+    position: fixed;
+    top: 14px;
+    left: 20px;
+    z-index: 100002;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(0, 30, 60, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    pointer-events: none;
+}
+
+.demo-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ef4444;
+    animation: demo-rec-blink 1.2s ease-in-out infinite;
+}
+
+/* ---- 结尾全屏画面 ---- */
+.demo-finale {
+    position: fixed;
+    inset: 0;
+    z-index: 100003;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00264d, #003d7a);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    pointer-events: none;
+}
+
+.demo-finale.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.demo-finale-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 28px;
+    filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.3));
+    animation: demo-logo-in 0.8s ease-out;
+}
+
+.demo-finale-company {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 16px;
+    animation: demo-fade-up 0.8s ease-out 0.2s both;
+}
+
+.demo-finale-motto {
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 12px;
+    letter-spacing: 4px;
+    animation: demo-fade-up 0.8s ease-out 0.4s both;
+}
+
+.demo-finale-tagline {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 32px;
+    animation: demo-fade-up 0.8s ease-out 0.55s both;
+}
+
+.demo-finale-url {
+    font-size: 18px;
+    color: #7ec8ff;
+    letter-spacing: 2px;
+    animation: demo-fade-up 0.8s ease-out 0.7s both;
+}
+
+/* ---- 退出按钮（录屏时可忽略） ---- */
+.demo-exit-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 100004;
+    padding: 6px 14px;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+body.demo-mode .demo-exit-btn {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.demo-exit-btn:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* ---- 动画关键帧 ---- */
+@keyframes demo-fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes demo-logo-in {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes demo-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.08); }
+}
+
+@keyframes demo-rec-blink {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.3; }
+}
+
+@keyframes demo-progress-shine {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* 录屏时隐藏退出按钮：加 ?demo=1&clean 参数 */
+body.demo-clean .demo-exit-btn {
+    display: none;
+}

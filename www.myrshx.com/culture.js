@@ -13,6 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
 var _cultureData = { categories: [], items: [] };
 var _cultureFilter = 'all';
 
+var CULTURE_CARD_ANIMS = ['up', 'down', 'left', 'right', 'zoom', 'rotate'];
+var CULTURE_REVEAL_ANIMS = ['fade', 'scale', 'up', 'down', 'left', 'right', 'blur', 'zoom'];
+
+function cultureRandomItem(list) {
+    return list[Math.floor(Math.random() * list.length)];
+}
+
+function cultureRandomDelay(index) {
+    return (Math.min(index, 12) * 0.04 + Math.random() * 0.12).toFixed(3);
+}
+
 function initCultureNavbar() {
     var header = document.getElementById('header');
     var hamburger = document.getElementById('hamburger');
@@ -114,13 +125,19 @@ async function loadCulturePage() {
         } else {
             renderCultureGrid();
         }
+        signalDemoContentReady();
     } catch (err) {
         if (grid) {
             grid.innerHTML = '<div class="culture-error">加载失败，请刷新页面重试<br><small>' +
                 escapeHtml(err.message) + '</small></div>';
         }
         console.error('企业文化加载失败:', err);
+        signalDemoContentReady();
     }
+}
+
+function signalDemoContentReady() {
+    window.dispatchEvent(new CustomEvent('rs-demo-content-ready'));
 }
 
 function renderCultureGrid() {
@@ -156,10 +173,12 @@ function renderCultureGrid() {
         var catLabel = ((cat.icon || '') + ' ' + (cat.name || item.category)).trim();
         var wideClass = '';
         var imgSrc = item.image || '';
+        var cardAnim = cultureRandomItem(CULTURE_CARD_ANIMS);
+        var revealAnim = cultureRandomItem(CULTURE_REVEAL_ANIMS);
 
-        return '<div class="culture-card' + wideClass + '" data-category="' + escapeHtml(item.category) + '">' +
-            '<div class="culture-card-img culture-card-img--click">' +
-            '<img src="' + escapeHtml(imgSrc) + '" alt="' + escapeHtml(item.title) + '" loading="lazy">' +
+        return '<div class="culture-card culture-card-in-' + cardAnim + wideClass + '" data-category="' + escapeHtml(item.category) + '" style="animation-delay:' + cultureRandomDelay(i) + 's">' +
+            '<div class="culture-card-img culture-card-img--click culture-reveal-' + revealAnim + '">' +
+            '<img src="' + escapeHtml(imgSrc) + '" alt="' + escapeHtml(item.title) + '" loading="lazy" decoding="async">' +
             '</div>' +
             '<div class="culture-card-info">' +
             '<span class="culture-card-cat">' + escapeHtml(catLabel) + '</span>' +
@@ -168,11 +187,36 @@ function renderCultureGrid() {
             '</div>';
     }).join('');
 
+    initCultureCardImages(grid);
+
     grid.querySelectorAll('.culture-card-img--click').forEach(function (wrap) {
         wrap.addEventListener('click', function () {
             var img = wrap.querySelector('img');
             if (img) openCultureLightbox(img.getAttribute('src'), img.getAttribute('alt'));
         });
+    });
+}
+
+function initCultureCardImages(grid) {
+    if (!grid) return;
+    grid.querySelectorAll('.culture-card-img').forEach(function (wrap) {
+        var img = wrap.querySelector('img');
+        if (!img) return;
+
+        function markLoaded() {
+            wrap.classList.add('is-loaded');
+        }
+
+        function markError() {
+            wrap.classList.add('is-loaded', 'is-error');
+        }
+
+        if (img.complete && img.naturalWidth > 0) {
+            markLoaded();
+        } else {
+            img.addEventListener('load', markLoaded, { once: true });
+            img.addEventListener('error', markError, { once: true });
+        }
     });
 }
 

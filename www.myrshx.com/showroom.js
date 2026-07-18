@@ -100,10 +100,16 @@ async function loadShowroom() {
         });
 
         renderShowroomItems();
+        signalDemoContentReady();
     } catch (err) {
         grid.innerHTML = '<div class="showroom-error">加载失败，请刷新页面重试</div>';
         console.error('产品展厅加载失败:', err);
+        signalDemoContentReady();
     }
+}
+
+function signalDemoContentReady() {
+    window.dispatchEvent(new CustomEvent('rs-demo-content-ready'));
 }
 
 function renderShowroomItems() {

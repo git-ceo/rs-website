@@ -674,6 +674,29 @@ async function loadCarousel() {
 /* ----------------------------------------
    3. 企业文化动态加载
    ---------------------------------------- */
+function initCultureCardImages(grid) {
+    if (!grid) return;
+    grid.querySelectorAll('.culture-card-img').forEach(function (wrap) {
+        var img = wrap.querySelector('img');
+        if (!img) return;
+
+        function markLoaded() {
+            wrap.classList.add('is-loaded');
+        }
+
+        function markError() {
+            wrap.classList.add('is-loaded', 'is-error');
+        }
+
+        if (img.complete && img.naturalWidth > 0) {
+            markLoaded();
+        } else {
+            img.addEventListener('load', markLoaded, { once: true });
+            img.addEventListener('error', markError, { once: true });
+        }
+    });
+}
+
 async function loadCulture() {
     try {
         var res = await fetch('/api/culture');
@@ -694,12 +717,13 @@ async function loadCulture() {
             return (a.order || 0) - (b.order || 0);
         });
 
-        container.innerHTML = items.map(function (item) {
+        container.innerHTML = items.map(function (item, i) {
             var cat = catMap[item.category] || {};
             var catLabel = (cat.icon || '') + ' ' + (cat.name || item.category);
+            var revealAnim = ['fade', 'scale', 'up', 'down', 'left', 'right', 'blur', 'zoom'][Math.floor(Math.random() * 8)];
             return ''
                 + '<div class="culture-card" data-category="' + escapeHtml(item.category) + '">'
-                +   '<div class="culture-card-img">'
+                +   '<div class="culture-card-img culture-reveal-' + revealAnim + '">'
                 +     '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.title) + '" loading="lazy">'
                 +   '</div>'
                 +   '<div class="culture-card-info">'
@@ -709,6 +733,7 @@ async function loadCulture() {
                 + '</div>';
         }).join('');
 
+        initCultureCardImages(container);
         observeNewAnimElements(container);
     } catch (err) {
         console.log('企业文化加载失败，保持静态内容', err);

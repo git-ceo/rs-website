@@ -4440,6 +4440,23 @@ img { max-width: 100%; height: auto; }
     width: 100%;
     overflow: hidden;
     background: #f0f2f5;
+    position: relative;
+}
+
+.culture-card-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, #eef1f5 0%, #f8f9fb 40%, #eef1f5 80%);
+    background-size: 200% 100%;
+    animation: culture-img-shimmer 1.4s ease-in-out infinite;
+    transition: opacity 0.45s ease;
+    pointer-events: none;
+}
+
+.culture-card-img.is-loaded::before {
+    opacity: 0;
 }
 
 .culture-card-img img {
@@ -4447,7 +4464,190 @@ img { max-width: 100%; height: auto; }
     height: 240px;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease;
+    opacity: 0;
+}
+
+.culture-card-img.is-error img {
+    opacity: 0.35;
+}
+
+/* 图片加载完成 — 随机显现动效 */
+.culture-card-img[class*="culture-reveal-"] img {
+    will-change: opacity, transform, filter;
+}
+
+.culture-card-img.culture-reveal-fade img {
+    opacity: 0;
+}
+
+.culture-card-img.culture-reveal-scale img {
+    opacity: 0;
+    transform: scale(1.08);
+}
+
+.culture-card-img.culture-reveal-up img {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+.culture-card-img.culture-reveal-down img {
+    opacity: 0;
+    transform: translateY(-16px);
+}
+
+.culture-card-img.culture-reveal-left img {
+    opacity: 0;
+    transform: translateX(16px);
+}
+
+.culture-card-img.culture-reveal-right img {
+    opacity: 0;
+    transform: translateX(-16px);
+}
+
+.culture-card-img.culture-reveal-blur img {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(1.03);
+}
+
+.culture-card-img.culture-reveal-zoom img {
+    opacity: 0;
+    transform: scale(0.88);
+}
+
+.culture-card-img.culture-reveal-fade.is-loaded img {
+    animation: culture-reveal-fade 0.58s ease forwards;
+}
+
+.culture-card-img.culture-reveal-scale.is-loaded img {
+    animation: culture-reveal-scale 0.62s ease forwards;
+}
+
+.culture-card-img.culture-reveal-up.is-loaded img {
+    animation: culture-reveal-up 0.58s ease forwards;
+}
+
+.culture-card-img.culture-reveal-down.is-loaded img {
+    animation: culture-reveal-down 0.58s ease forwards;
+}
+
+.culture-card-img.culture-reveal-left.is-loaded img {
+    animation: culture-reveal-left 0.58s ease forwards;
+}
+
+.culture-card-img.culture-reveal-right.is-loaded img {
+    animation: culture-reveal-right 0.58s ease forwards;
+}
+
+.culture-card-img.culture-reveal-blur.is-loaded img {
+    animation: culture-reveal-blur 0.68s ease forwards;
+}
+
+.culture-card-img.culture-reveal-zoom.is-loaded img {
+    animation: culture-reveal-zoom 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes culture-reveal-fade {
+    to { opacity: 1; }
+}
+
+@keyframes culture-reveal-scale {
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes culture-reveal-up {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes culture-reveal-down {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes culture-reveal-left {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes culture-reveal-right {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes culture-reveal-blur {
+    to { opacity: 1; filter: blur(0); transform: scale(1); }
+}
+
+@keyframes culture-reveal-zoom {
+    to { opacity: 1; transform: scale(1); }
+}
+
+.culture-page-grid .culture-card {
+    opacity: 0;
+    animation-duration: 0.55s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.culture-page-grid .culture-card-in-up {
+    transform: translateY(20px);
+    animation-name: culture-card-in-up;
+}
+
+.culture-page-grid .culture-card-in-down {
+    transform: translateY(-20px);
+    animation-name: culture-card-in-down;
+}
+
+.culture-page-grid .culture-card-in-left {
+    transform: translateX(20px);
+    animation-name: culture-card-in-left;
+}
+
+.culture-page-grid .culture-card-in-right {
+    transform: translateX(-20px);
+    animation-name: culture-card-in-right;
+}
+
+.culture-page-grid .culture-card-in-zoom {
+    transform: scale(0.9);
+    animation-name: culture-card-in-zoom;
+}
+
+.culture-page-grid .culture-card-in-rotate {
+    transform: scale(0.94) rotate(-2deg);
+    animation-name: culture-card-in-rotate;
+}
+
+@keyframes culture-card-in-up {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes culture-card-in-down {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes culture-card-in-left {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes culture-card-in-right {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes culture-card-in-zoom {
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes culture-card-in-rotate {
+    to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes culture-img-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.culture-card-img.is-error::before {
+    opacity: 0;
 }
 
 .culture-card:hover .culture-card-img img {

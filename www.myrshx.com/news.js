@@ -57,15 +57,22 @@ async function loadNewsPage() {
         var news = Array.isArray(json) ? json : (json.data || []);
         if (!Array.isArray(news) || !news.length) {
             listEl.innerHTML = '<div class="news-page-empty"><p>暂无新闻</p></div>';
+            signalDemoContentReady();
             return;
         }
         _allNews = news;
         _currentPage = 1;
         renderNewsPage();
+        signalDemoContentReady();
     } catch (err) {
         listEl.innerHTML = '<div class="news-page-empty"><p>新闻加载失败，请稍后重试</p></div>';
         console.log('新闻列表加载失败', err);
+        signalDemoContentReady();
     }
+}
+
+function signalDemoContentReady() {
+    window.dispatchEvent(new CustomEvent('rs-demo-content-ready'));
 }
 
 function renderNewsPage() {

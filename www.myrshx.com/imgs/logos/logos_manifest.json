@@ -1,0 +1,88 @@
+{
+  "clients": [
+    {
+      "name": "中国工程物理研究院",
+      "short": "CAEP",
+      "url": "https://www.caep.cn/",
+      "logo": "images/logos/caep.jpg",
+      "fallback": "images/logos/caep_text.svg"
+    },
+    {
+      "name": "西南科技大学",
+      "short": "SWUST",
+      "url": "https://www.swust.edu.cn/",
+      "logo": "images/logos/swust.svg",
+      "fallback": "images/logos/swust_text.svg"
+    },
+    {
+      "name": "绵阳师范学院",
+      "short": "MTC",
+      "url": "https://www.mtc.edu.cn/",
+      "logo": "images/logos/mtc.png",
+      "fallback": "images/logos/mtc_text.svg"
+    },
+    {
+      "name": "中国空气动力研究与发展中心",
+      "short": "CARDC",
+      "url": "https://www.cardc.cn/",
+      "logo": "images/logos/cardc.jpg",
+      "fallback": "images/logos/cardc_text.svg"
+    },
+    {
+      "name": "四川长虹",
+      "short": "Changhong",
+      "url": "https://www.changhong.com/",
+      "logo": "images/logos/changhong.png",
+      "fallback": "images/logos/changhong_text.svg"
+    },
+    {
+      "name": "四川九洲",
+      "short": "Jezetek",
+      "url": "https://www.jezetek.cc/",
+      "logo": "images/logos/jezetek.png",
+      "fallback": "images/logos/jezetek_text.svg"
+    },
+    {
+      "name": "好医生药业",
+      "short": "HYS",
+      "url": "https://www.hys.cn/",
+      "logo": "images/logos/hys.png",
+      "fallback": "images/logos/hys_text.svg"
+    },
+    {
+      "name": "四川东材科技",
+      "short": "EMTCO",
+      "url": "https://www.emtco.cn/",
+      "logo": "images/logos/emtco.png",
+      "fallback": "images/logos/emtco_text.svg"
+    },
+    {
+      "name": "西南交通大学",
+      "short": "SWJTU",
+      "url": "https://www.swjtu.edu.cn/",
+      "logo": "images/logos/swjtu.png",
+      "fallback": "images/logos/swjtu_text.svg"
+    },
+    {
+      "name": "中国石油",
+      "short": "CNPC",
+      "url": "https://www.cnpc.com.cn/",
+      "logo": "images/logos/cnpc_text.svg",
+      "fallback": "images/logos/cnpc_text.svg"
+    },
+    {
+      "name": "四川省疾控中心",
+      "short": "SCCDC",
+      "url": "https://www.sccdc.cn/",
+      "logo": "images/logos/sccdc.png",
+      "fallback": "images/logos/sccdc_text.svg"
+    },
+    {
+      "name": "四川省质检院",
+      "short": "SPQI",
+      "url": "https://www.spqi.com.cn/",
+      "logo": "images/logos/spqi.png",
+      "fallback": "images/logos/spqi_text.svg"
+    }
+  ]
+}
